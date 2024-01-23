@@ -1,4 +1,4 @@
-*ForoughPedia
+# ForoughPedia
 
 A Knowledge Website about Forough Farrokhzad
 
