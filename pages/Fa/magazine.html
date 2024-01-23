@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazines</title>
+  <!-- Favicons -->
+  <link href="../../img/favicon.png" rel="icon">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800'
+    rel="stylesheet">
+
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/magazine.css">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/main.js"></script>
+</head>
+
+<body>
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <h1>
+          <a href="../fa/index.html"><span>Forough Farrokhzad</span></a>
+        </h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li class="dropdown"><a href="javascript:void(0);"><span>fa</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('en')">en</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('fa')">fa</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('it')">it</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto active" href="../fa/index.html">Home</a></li>
+          <li class="dropdown"><a href="javascript:void(0);"><span>pages</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../fa/magazine.html">magazine</a></li>
+              <li><a href="../fa/stages.html">stages</a></li>
+              <li><a href="../fa/accordion.html">accordion</a></li>
+              <li><a href="../fa/main_index.html">main-index</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#about">Study of the domain</a></li>
+          <li class="dropdown"><a href="index.html#ko"><span>Knowledge Organization</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../fa/index.html#conceptual-map">Conceptual Map</a></li>
+              <li><a href="../fa/index.html#er-model">E/R Model</a></li>
+              <li><a href="../fa/index.html#metadata-analysis">Metadata Analysis</a></li>
+              <li><a href="../fa/index.html#metadata-alignment">Metadata Alignment</a></li>
+              <li><a href="../fa/index.html#enhanced-er">Enhanced E/R Model</a></li>
+              <li><a href="../fa/index.html#theoretical-model">Theoretical Model</a></li>
+              <li><a href="../fa/index.html#conceptual-model">Conceptual Model</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../fa/index.html#kr"><span>Knowledge Representation</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../fa/index.html#itemsDescription">Items Description</a></li>
+              <li><a href="../fa/index.html#uri">URI Production</a></li>
+              <li><a href="../fa/index.html#rdf-production">RDF Production</a></li>
+              <li><a href="../fa/index.html#rdf-visualization">RDF Visualization</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../fa/index.html#speakers">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="container">
+
+      <div class="heading">
+        <img src="../../img/headin.jpg" alt="heading" />
+      </div>
+
+      <br />
+
+      <section class="show-all-images">
+        <div class="img-container" id="all-images-container">
+          <!-- JavaScript will copy all images here to showw all initially -->
+        </div>
+      </section>
+
+      <!-- Interval 1  -->
+      <section class="images" id="image-interval-1">
+        <div class="img-container">
+
+          <!-- Interval 1 image 1 -->
+          <a class="lightbox" href="#ace1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 2  -->
+          <a class="lightbox" href="#ace2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 3  -->
+          <a class="lightbox" href="#ace3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 4  -->
+          <a class="lightbox" href="#ace4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 5  -->
+          <a class="lightbox" href="#ace5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 6  -->
+          <a class="lightbox" href="#ace6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 7  -->
+          <a class="lightbox" href="#ace7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 8  -->
+          <a class="lightbox" href="#ace8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 9  -->
+          <a class="lightbox" href="#ace9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 1 image 10  -->
+          <a class="lightbox" href="#ace10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="ace10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Interval 2  -->
+      <section class="images" id="image-interval-2">
+        <div class="img-container">
+
+          <!-- Interval 2 image 1  -->
+          <a class="lightbox" href="#sec1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 2  -->
+          <a class="lightbox" href="#sec2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 3  -->
+          <a class="lightbox" href="#sec3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 4  -->
+          <a class="lightbox" href="#sec4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 5  -->
+          <a class="lightbox" href="#sec5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 6  -->
+          <a class="lightbox" href="#sec6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 7  -->
+          <a class="lightbox" href="#sec7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 8  -->
+          <a class="lightbox" href="#sec8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 9  -->
+          <a class="lightbox" href="#sec9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 2 image 10  -->
+          <a class="lightbox" href="#sec10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="sec10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interval 3  -->
+      <section class="images" id="image-interval-3">
+        <div class="img-container">
+
+          <!-- Interval 3 image 1  -->
+          <a class="lightbox" href="#third1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 2  -->
+          <a class="lightbox" href="#third2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 3  -->
+          <a class="lightbox" href="#third3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 4  -->
+          <a class="lightbox" href="#third4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 5  -->
+          <a class="lightbox" href="#third5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 6  -->
+          <a class="lightbox" href="#third6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 7  -->
+          <a class="lightbox" href="#third7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 8  -->
+          <a class="lightbox" href="#third8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 9  -->
+          <a class="lightbox" href="#third9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 3 image 10  -->
+          <a class="lightbox" href="#third10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="third10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Interval 4  -->
+      <section class="images" id="image-interval-4">
+        <div class="img-container">
+
+          <!-- Interval 4 image 1  -->
+          <a class="lightbox" href="#forth1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth1">
+            <img src="../../img/illus.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 2  -->
+          <a class="lightbox" href="#forth2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth2">
+            <img src="../../img/1.avif" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 3  -->
+          <a class="lightbox" href="#forth3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth3">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 4  -->
+          <a class="lightbox" href="#forth4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth4">
+            <img src="../../img/2.jpg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 5  -->
+          <a class="lightbox" href="#forth5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth5">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 6  -->
+          <a class="lightbox" href="#forth6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth6">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 7  -->
+          <a class="lightbox" href="#forth7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth7">
+            <img src="../../img/1.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 8  -->
+          <a class="lightbox" href="#forth8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth8">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 9  -->
+          <a class="lightbox" href="#forth9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth9">
+            <img src="../../img/4.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+          <!-- Interval 4 image 10  -->
+          <a class="lightbox" href="#forth10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+          </a>
+          <div class="lightbox-target" id="forth10">
+            <img src="../../img/3.jpeg" alt="News on Forough" />
+            <a class="lightbox-close" href="#"></a>
+          </div>
+
+        </div>
+      </section>
+
+      <br />
+      <br />
+      <br />
+      <div class="btns">
+        <div class="button-container">
+          <!-- <div class="vr-line"></div> -->
+          <button class="btn">| <br />1</button>
+
+          <button class="btn interval-btn" data-target="image-interval-1">
+            | <br />2<span class="hr-line1 common-hr"></span>
+          </button>
+
+          <button class="btn interval-btn" data-target="image-interval-2">
+            | <br />3
+            <span class="hr-line2 common-hr"></span>
+          </button>
+
+          <button class="btn interval-btn" data-target="image-interval-3">
+            | <br />4
+            <span class="hr-line3 common-hr"></span>
+          </button>
+
+          <button class="btn interval-btn" data-target="image-interval-4">
+            | <br />5
+            <span class="hr-line4 common-hr"></span>
+          </button>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Forough Farrokhzad Project</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#" target="_blank">Maede</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn">
+    <img src="../../img/forogh-top-btn.jpg" alt="forogh">
+  </button>
+
+  <button id="goBackBtn">back</button>
+  <!-- The Magazine JS File -->
+
+  <script src="../../js/magazine.js"></script>
+
+  <script>
+
+    function changeLanguage(lang) {
+
+      var currentScript = document.baseURI;
+
+      if (currentScript) {
+
+        var currentScriptPath = currentScript;
+        var currentScriptFolderPath = currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1);
+
+        var languageRegex = /\/(en|fa|it)\//;
+
+        var newLanguage = lang;
+        var newURL = currentScriptFolderPath.replace(languageRegex, '/' + newLanguage + '/') + 'magazine.html';
+
+        window.location.href = newURL;
+      }
+    }
+  </script>
+</body>
+
+</html>

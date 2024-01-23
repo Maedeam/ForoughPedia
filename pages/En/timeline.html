@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FFPedia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!--------------------
+   Favicons
+  -------------------->
+  <link href="../../img/favicon.png" rel="icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <!--<link rel="stylesheet" href="../../css/style.css">-->
+  <link rel="stylesheet" href="../../css/timeline.css">
+  <script src="../../js/timeline.js"></script>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!--------------------
+    MenuBar
+  -------------------->
+  <!--<header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <h1>
+          <a href="../en/index.html"><span>Forough Pedia</span></a>
+        </h1>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li class="dropdown"><a href="#hero">Project</a></li>
+          <li class="dropdown"><a href="#">User Guide</a></li>
+          <li class="dropdown"><a href="#">Biography</a></li>
+
+          <li><a class="nav-link scrollto" href="#about">Study of the domain</a></li>
+          <li class="dropdown"><a href="#ko"><span>Ontology</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#conceptual-map">Conceptual Map</a></li>
+              <li><a href="#er-model">E/R Model</a></li>
+              <li><a href="#metadata-analysis">Metadata Analysis</a></li>
+              <li><a href="#metadata-alignment">Metadata Alignment</a></li>
+              <li><a href="#enhanced-er">Enhanced E/R Model</a></li>
+              <li><a href="#theoretical-model">Theoretical Model</a></li>
+              <li><a href="#conceptual-model">Conceptual Model</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#biblio"><span>Bibliography</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#primaryBiblio">Primary Bibliography</a></li>
+              <li><a href="#secondaryBiblio">Secondary Bibliography</a></li>
+              <li><a href="#translations">Translations</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#speakers">Contact</a></li>
+          <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('en')">En</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('it')">It</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('fa')">Fa</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>-->
+  <!--------------------
+    Mian
+  -------------------->
+  <svg display="none">
+    <symbol id="arrow">
+      <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" />
+    </symbol>
+  </svg>
+  <h1>A Brief History of Unix Time</h1>
+  <div id="timeline" class="timeline">
+    <br />
+    <div class="btn-group">
+      <button class="btn" type="button" data-action="expand">Expand All</button>
+      <button class="btn" type="button" data-action="collapse">Collapse All</button>
+    </div>
+    <!------------------------------
+      1934-12-28
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false"
+          aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item1-name" class="timeline__meta">
+          <time class="timeline__date" datetime="1970-01-01">December 28, 1934</time><br>
+          <strong class="timeline__title">Birth</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">description</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+      1970-01-01
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false"
+          aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item2-name" class="timeline__meta">
+          <time class="timeline__date" datetime="1973-10-17">1973</time><br>
+          <strong class="timeline__title">Marriage</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Married with Parviz Shapour</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+      1970-01-01
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false"
+          aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item3-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2001-09-09">1955</time><br>
+          <strong class="timeline__title">First Book: The Captive</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">First Book: The Captive</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+      1970-01-01
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false"
+          aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item4-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2009-02-13">February 13, 2009</time><br>
+          <strong class="timeline__title">1,234,567,890 Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">At 11:31:30 PM UTC, the digits of the time were 1234567890. This was celebrated
+            worldwide, and even Google had a <a href="https://www.google.com/logos/unix1234567890.gif" target="_blank"
+              rel="noopener">doodle</a> for it.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+      1970-01-01
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+          1970-01-01
+        ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+          1970-01-01
+        ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+          1970-01-01
+        ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+          1970-01-01
+        ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+          1970-01-01
+        ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+          1970-01-01
+        ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+      1970-01-01
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
+          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item5-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+          <strong class="timeline__title">2 Billion Seconds</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM UTC.</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------
+      1970-01-01
+    ------------------------------>
+    <div class="timeline__item">
+      <div class="timeline__item-header">
+        <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false"
+          aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+          <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+            <use href="#arrow" />
+          </svg>
+        </button>
+        <span class="timeline__dot"></span>
+        <span id="item6-name" class="timeline__meta">
+          <time class="timeline__date" datetime="2038-01-19">January 19, 2038</time><br>
+          <strong class="timeline__title">Unix Epochalypse</strong>
+        </span>
+      </div>
+      <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
+        <div class="timeline__item-body-content">
+          <p class="timeline__item-p">Also known as the year 2038 problem, clocks running on a 32-bit signed integer
+            will
+            flip from 3:14:08 AM UTC on this day to 8:45:52 PM UTC on December 13, 1901. Therefore, values only from
+            -2,147,483,648 to 2,147,483,647 for the second are supported.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

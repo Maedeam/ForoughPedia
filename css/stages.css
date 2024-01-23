@@ -1,0 +1,250 @@
+/*
+--------------------
+Stages
+--------------------
+*/
+#scrollToTopBtn {
+  display: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  left: 45px;
+  z-index: 99;
+  font-size: 16px;
+  width: 7%;
+  height: 10%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#scrollToTopBtn img {
+  font-weight: 600;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+#goBackBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-footer {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .ff-img {
+  position: absolute;
+  top: 1%;
+  z-index: 1;
+}
+
+.container .ff-img img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+}
+
+.container .stage {
+  border-radius: 50%;
+  border: 1px dashed gray;
+  position: absolute;
+  top: 10%;
+}
+
+.container .stage .stage-num {
+  right: -28px !important;
+  height: 30px;
+  width: 66px;
+  border: 1px solid #999;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  color: #999 !important;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.container .stage .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.container .stage .flex img {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+}
+
+.container .stage .flex p {
+  font-size: 17px !important;
+  color: #999;
+}
+
+.container .stage1 {
+  height: 25vh;
+  width: 45%;
+}
+
+.container .stage1 figure {
+  z-index: 100000;
+  position: absolute;
+}
+
+.container .stage1 figure:first-child {
+  left: 18%;
+  bottom: -55px;
+  transform: translateX(-50%);
+}
+
+.container .stage1 figure:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -75px;
+}
+
+.container .stage1 figure:nth-child(3) {
+  right: 18%;
+  bottom: -55px;
+  transform: translateX(50%);
+}
+
+.container .stage1 .stage-num {
+  right: 0;
+  bottom: 35px;
+  z-index: 999;
+}
+
+.container .stage2 {
+  height: 45vh;
+  width: 55%;
+}
+
+.container .stage2 div {
+  z-index: 100000;
+  position: absolute;
+}
+
+.container .stage2 div:first-child {
+  left: 18%;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+
+.container .stage2 div:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -55px;
+}
+
+.container .stage2 div:nth-child(3) {
+  right: 18%;
+  bottom: -25px;
+  transform: translateX(50%);
+}
+
+.container .stage2 .stage-num {
+  right: 0;
+  bottom: 85px;
+  z-index: 999;
+}
+
+.container .stage3 {
+  height: 65vh;
+  width: 65%;
+}
+
+.container .stage3 div {
+  z-index: 100000;
+  position: absolute;
+}
+
+.container .stage3 div:first-child {
+  left: 18%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+
+.container .stage3 div:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -55px;
+}
+
+.container .stage3 div:nth-child(3) {
+  right: 18%;
+  bottom: -15px;
+  transform: translateX(50%);
+}
+
+.container .stage3 .stage-num {
+  right: 0;
+  bottom: 125px;
+  z-index: 999;
+}
+
+.container .stage4 {
+  height: 85vh;
+  width: 75%;
+}
+
+.container .stage4 div {
+  z-index: 100000;
+  position: absolute;
+}
+
+.container .stage4 div:first-child {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+}
+
+.container .stage4 .stage-num {
+  right: 0;
+  bottom: 175px;
+  z-index: 999;
+}
+
+.head-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #a8baff;
+  text-align: center;
+}
