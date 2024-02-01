@@ -419,69 +419,68 @@ $("#csv").click(function () {
   // hope the server sets Content-Disposition: attachment!
 
   if (document.getElementById("item1").style.display != "none") {
-    window.location = "triple_tables/Item1 - Only Voice Remains.csv";
+    window.location = "../../triple_tables/Item1 - Only Voice Remains.csv";
   }
   if (document.getElementById("item2").style.display != "none") {
-    window.location = "triple_tables/Item2 - Moon Sun Flower Game.csv";
+    window.location = "../../triple_tables/Item2 - Moon Sun Flower Game.csv";
   }
   if (document.getElementById("item3").style.display != "none") {
-    window.location = "triple_tables/Item3 - Foroughs Painting.csv";
+    window.location = "../../triple_tables/Item3 - Foroughs Painting.csv";
   }
   if (document.getElementById("item4").style.display != "none") {
-    window.location = "triple_tables/Item4 - The House is Black.csv";
+    window.location = "../../triple_tables/Item4 - The House is Black.csv";
   }
 
   if (document.getElementById("item5").style.display != "none") {
-    window.location = "triple_tables/Item5 - Grave of Forough.csv";
+    window.location = "../../triple_tables/Item5 - Grave of Forough.csv";
   }
   if (document.getElementById("item6").style.display != "none") {
     window.location =
-      "triple_tables/Item6 - Forough Farrokhzads Childhood Home.csv";
+      "../../triple_tables/Item6 - Forough Farrokhzads Childhood Home.csv";
   }
   if (document.getElementById("item7").style.display != "none") {
     window.location =
-      "triple_tables/Item7 - A Literary Biography and Unpublished Letters.csv";
+      "../../triple_tables/Item7 - A Literary Biography and Unpublished Letters.csv";
   }
   if (document.getElementById("item8").style.display != "none") {
     window.location =
-      "triple_tables/Item8 - Let Us Believe in the Dawn of the Cold Season.csv";
+      "../../triple_tables/Item8 - Let Us Believe in the Dawn of the Cold Season.csv";
   }
   if (document.getElementById("item9").style.display != "none") {
-    window.location = "triple_tables/Item9 - Sin.csv";
+    window.location = "../../triple_tables/Item9 - Sin.csv";
   }
   if (document.getElementById("item10").style.display != "none") {
     window.location =
-      "triple_tables/Item10 - Interview with Forough Farrokhzad.csv";
+      "../../triple_tables/Item10 - Interview with Forough Farrokhzad.csv";
   }
 });
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
-      $('#scrollToTopBtn').fadeIn();
+      $("#scrollToTopBtn").fadeIn();
     } else {
-      $('#scrollToTopBtn').fadeOut();
+      $("#scrollToTopBtn").fadeOut();
     }
   });
-  $('#scrollToTopBtn').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 800);
+  $("#scrollToTopBtn").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
   });
 
-
   toggleBackButton();
 
-  $(window).on('popstate', function () {
+  $(window).on("popstate", function () {
     toggleBackButton();
   });
-  $('#goBackBtn').click(function () {
+  $("#goBackBtn").click(function () {
     window.history.back();
     return false;
   });
 });
 function toggleBackButton() {
   if (window.history.length > 1) {
-      $('#goBackBtn').fadeIn();
+    $("#goBackBtn").fadeIn();
   } else {
-      $('#goBackBtn').fadeOut();
+    $("#goBackBtn").fadeOut();
   }
 }
