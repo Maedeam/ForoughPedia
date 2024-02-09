@@ -10,8 +10,9 @@ function wrapChars(selector) {
   e.innerText = "";
 
   let words = text.split(" ");
-  console.log(words);
-  words.forEach((word) => {
+
+  words.forEach((word, index) => {
+
     var div = document.createElement("div");
     div.classList.add("word");
     Array.from(word).forEach((character) => {
@@ -20,6 +21,17 @@ function wrapChars(selector) {
       div.appendChild(span);
     });
     e.appendChild(div);
+    if (index == 2) {
+      e.appendChild(document.createElement("br"));
+    } else if (index == 5) {
+      e.appendChild(document.createElement("br"));
+    } else if (index == 10) {
+      e.appendChild(document.createElement("br"));
+    } else if (index == 13) {
+      e.appendChild(document.createElement("br"));
+    } else if (index == 16) {
+      e.appendChild(document.createElement("br"));
+    }
   });
 }
 
