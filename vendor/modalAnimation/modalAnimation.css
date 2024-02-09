@@ -236,6 +236,7 @@ body.modal-active {
     border-radius: 3px;
     font-weight: 300;
     position: relative;
+    width: 45%;
 }
 
 .modal-background .modal-animate h2 {

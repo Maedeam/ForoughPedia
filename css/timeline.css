@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --hue: 223;
   --bg: hsl(var(--hue), 10%, 90%);
@@ -13,24 +14,33 @@
   --trans-timing: cubic-bezier(0.65, 0, 0.35, 1);
   font-size: calc(16px + (24 - 16) * (100vw - 320px) / (2560 - 320));
 }
+
 a {
   color: var(--primary);
   transition: color var(--trans-dur);
 }
+
 body,
 button {
-  color: var(--fg);
+  padding: 0px !important;
+  color: var(--fg) !important;
   font: 1em/1.5 "IBM Plex Sans", sans-serif;
 }
+
 body {
-  background-color: var(--bg);
-  background-image: url("../img/hero-bg.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  transition: background-color var(--trans-dur), color var(--trans-dur);
+  background-color: var(--bg) !important;
+  background-image: url("../img/hero-bg.jpg") !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
+  transition: background-color var(--trans-dur), color var(--trans-dur) !important;
 }
+
+p {
+  color: black;
+}
+
 h1 {
   font-size: 2em;
   color: #009b77 !important;
@@ -39,24 +49,28 @@ h1 {
   padding-top: 1.5rem;
   text-align: center;
 }
+
 .btn {
   background-color: #969494;
   border-radius: 0.25em;
-  color: var(--bg);
+  color: var(--bg) !important;
   cursor: pointer;
   padding: 0.375em 0.75em;
   transition: background-color calc(var(--trans-dur) / 2) linear,
     color var(--trans-dur);
   -webkit-tap-highlight-color: transparent;
 }
+
 .btn:hover {
   background-color: hsl(var(--hue), 10%, 50%);
 }
+
 .btn-group {
   display: flex;
   gap: 0.375em;
   margin-bottom: 1.5em;
 }
+
 .timeline {
   margin: auto;
   padding: 0 1.5em;
@@ -64,6 +78,7 @@ h1 {
   max-width: 36em;
   background-color: rgba(255, 255, 255, 0.7);
 }
+
 .timeline__arrow {
   background-color: #969494;
   border-radius: 0.25em;
@@ -79,10 +94,12 @@ h1 {
   appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 .timeline__arrow:focus-visible,
 .timeline__arrow:hover {
   background-color: hsl(var(--hue), 10%, 50%, 0.4);
 }
+
 .timeline__arrow-icon {
   display: block;
   pointer-events: none;
@@ -91,10 +108,12 @@ h1 {
   width: 100%;
   height: auto;
 }
+
 .timeline__date {
   font-size: 0.833em;
   line-height: 2.4;
 }
+
 .timeline__dot {
   background-color: currentColor;
   border-radius: 50%;
@@ -106,10 +125,12 @@ h1 {
   width: 0.75em;
   height: 0.75em;
 }
+
 .timeline__item {
   position: relative;
   padding-bottom: 2.25em;
 }
+
 .timeline__item:not(:last-child):before {
   background-color: currentColor;
   content: "";
@@ -121,17 +142,21 @@ h1 {
   height: 100%;
   transform: translateX(-50%);
 }
+
 [dir="rtl"] .timeline__arrow-icon {
   transform: rotate(90deg);
 }
+
 [dir="rtl"] .timeline__item:not(:last-child):before {
   right: 2.625em;
   left: auto;
   transform: translateX(50%);
 }
+
 .timeline__item-header {
   display: flex;
 }
+
 .timeline__item-body {
   border-radius: 0.375em;
   overflow: hidden;
@@ -139,6 +164,7 @@ h1 {
   margin-inline-start: 4em;
   height: 0;
 }
+
 .timeline__item-body-content {
   background-color: hsl(var(--hue), 10%, 50%, 0.2);
   opacity: 0;
@@ -147,22 +173,27 @@ h1 {
   transition: opacity var(--trans-dur) var(--trans-timing),
     visibility var(--trans-dur) steps(1, end);
 }
+
 .timeline__meta {
   width: 100%;
 }
+
 .timeline__title {
   font-size: 1.5em;
   line-height: 1.333;
 }
+
 /* Expanded state */
 .timeline__item-body--expanded {
   height: auto;
 }
+
 .timeline__item-body--expanded .timeline__item-body-content {
   opacity: 1;
   visibility: visible;
   transition-delay: var(--trans-dur), 0s;
 }
+
 .timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
   transform: rotate(0);
 }
@@ -174,4 +205,42 @@ h1 {
     --fg: hsl(var(--hue), 10%, 90%);
     --primary: hsl(var(--hue), 90%, 70%);
   }
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+
+.a-footer {
+  color: #009b77 !important;
+}
+
+.padding-collapse {
+  padding: 0.375rem 0.75rem !important;
+}
+
+#item1-name,
+#item2-name,
+#item3-name,
+#item4-name,
+#item5-name,
+#item6-name,
+#item7-name,
+#item8-name,
+#item9-name,
+#item10-name,
+#item11-name,
+#item12-name,
+#item13-name,
+#item14-name,
+#item15-name,
+#item16-name,
+#item17-name {
+  color: #354c47 !important;
+}
+
+.greenlink {
+  color: #009b77 !important;
+  font-weight: bolder;
+  text-shadow: none !important;
 }

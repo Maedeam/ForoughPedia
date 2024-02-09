@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     // Redirect to the 'index.html' page after 3 seconds
     window.location.href = "pages/En/home.html";
-  }, 3000);
+  }, 2000);
 });

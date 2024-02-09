@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery</title>
+
   <!-- Favicons -->
-  <link href="../../img/favicon.jpg" rel="icon">
+  <link href="../../img/favicon.png" rel="icon">
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800'
@@ -17,68 +18,85 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="../../css/style.css">
-  <script src="../../js/main.js"></script>
 </head>
 
 <body>
+  <!-- ======= Start Header ======= -->
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
       <div id="logo" class="me-auto">
         <h1>
-          <a href="../en/index.html"><span>Forough Farrokhzad</span></a>
+          <a href="../../index.html"><span>ForoughPedia</span></a>
         </h1>
       </div>
-
+      <!-- ======= Navbar ======= -->
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li class="dropdown"><a href="javascript:void(0);"><span>en</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="javascript:void(0);" onclick="changeLanguage('en')">en</a></li>
-              <li><a href="javascript:void(0);" onclick="changeLanguage('fa')">fa</a></li>
-              <li><a href="javascript:void(0);" onclick="changeLanguage('it')">it</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto active" href="../en/index.html">Home</a></li>
-          <li class="dropdown"><a href="javascript:void(0);"><span>pages</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="../en/magazine.html">magazine</a></li>
-              <li><a href="../en/stages.html">stages</a></li>
-              <li><a href="../en/accordion.html">accordion</a></li>
-              <li><a href="../en/main_index.html">main-index</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="index.html#about">Study of the domain</a></li>
-          <li class="dropdown"><a href="index.html#ko"><span>Knowledge Organization</span> <i
+          <li><a class="nav-link scrollto" href="home.html#about">Project</a></li>
+          <li><a class="nav-link scrollto" href="guide.html">User Guide</a></li>
+          <li class="dropdown"><a href="stages.html" class="active"><span class="bg-transparent">Biography</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../en/index.html#conceptual-map">Conceptual Map</a></li>
-              <li><a href="../en/index.html#er-model">E/R Model</a></li>
-              <li><a href="../en/index.html#metadata-analysis">Metadata Analysis</a></li>
-              <li><a href="../en/index.html#metadata-alignment">Metadata Alignment</a></li>
-              <li><a href="../en/index.html#enhanced-er">Enhanced E/R Model</a></li>
-              <li><a href="../en/index.html#theoretical-model">Theoretical Model</a></li>
-              <li><a href="../en/index.html#conceptual-model">Conceptual Model</a></li>
+              <li><a href="stages.html">Stages</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="../en/index.html#kr"><span>Knowledge Representation</span> <i
+          <li><a class="nav-link scrollto" href="home.html#capta">Capta</a></li>
+          <li class="dropdown"><a href="home.html#analysis"><span>Analysis</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="home.html#map1">map1</a></li>
+              <li><a href="home.html#map2">map2</a></li>
+              <li><a href="home.html#plot1">plot1</a></li>
+              <li><a href="home.html#plot2">plot2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ontology.html"><span>Ontology</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="ontology.html#conceptual-map">Conceptual Map</a></li>
+              <li><a href="ontology.html#er-model">E/R Model</a></li>
+              <li><a href="ontology.html#metadata-analysis">Metadata Analysis</a></li>
+              <li><a href="ontology.html#metadata-alignment">Metadata Alignment</a></li>
+              <li><a href="ontology.html#enhanced-er">Enhanced E/R Model</a></li>
+              <li><a href="ontology.html#theoretical-model">Theoretical Model</a></li>
+              <li><a href="ontology.html#conceptual-model">Conceptual Model</a></li>
+              <li><a href="ontology.html#items-description">Items Description</a></li>
+              <li><a href="ontology.html#uri-droduction">URI Production</a></li>
+              <li><a href="ontology.html#rdf-production">RDF Production</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="bibliography.html"><span>Bibliography</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="../en/index.html#itemsDescription">Items Description</a></li>
-              <li><a href="../en/index.html#uri">URI Production</a></li>
-              <li><a href="../en/index.html#rdf-production">RDF Production</a></li>
-              <li><a href="../en/index.html#rdf-visualization">RDF Visualization</a></li>
+              <li><a href="bibliography.html#primaryBib">Primary Bibliography</a></li>
+              <li><a href="bibliography.html#secondaryBib">Secondary Bibliography</a></li>
+              <li><a href="bibliography.html#translations">Translations</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="../en/index.html#speakers">Contact</a></li>
-
+          <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('En')">En</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('It')">It</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('Fa')">Fa</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
+  <!-- ======= End Header ======= -->
+
   <section id="hero">
     <div class="container">
 
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
 
@@ -478,22 +496,23 @@
       <br />
       <br />
       <br />
+      <br />
       <div class="btns">
         <div class="button-container">
           <!-- <div class="vr-line"></div> -->
-          <button class="btn">| <br />1313</button>
+          <button class="btn">| <br />1934</button>
 
           <button class="btn interval-btn" data-target="image-interval-1">
-            | <br />13xx<span class="hr-line1 common-hr"></span>
+            | <br />1955<span class="hr-line1 common-hr"></span>
           </button>
 
           <button class="btn interval-btn" data-target="image-interval-2">
-            | <br />13xx
+            | <br />1958
             <span class="hr-line2 common-hr"></span>
           </button>
 
           <button class="btn interval-btn" data-target="image-interval-3">
-            | <br />After <br />Death
+            | <br />1967
             <span class="hr-line3 common-hr"></span>
           </button>
 
@@ -511,43 +530,22 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Forough Farrokhzad Project</strong>. All Rights Reserved
+        &copy; Copyright <a class="a-footer" href="home.html"><strong>ForoughPedia</strong>.</a>
+        <br />
+        All primary material on the site is used for educational purposes only.
       </div>
       <div class="credits">
-        Designed by <a href="#" target="_blank">Maede</a>
+        Designed by Maede
       </div>
     </div>
   </footer>
 
-  <button id="scrollToTopBtn">
-    <img src="../../img/gallery-en/Galleryforogh-top-btn.jpg" alt="forogh">
-  </button>
-
-  <button id="goBackBtn">back</button>
+  <button id="scrollToTopBtn">UP</button>
   <!-- The Gallery JS File -->
 
   <script src="../../js/gallery.js"></script>
 
-  <script>
-
-    function changeLanguage(lang) {
-
-      var currentScript = document.baseURI;
-
-      if (currentScript) {
-
-        var currentScriptPath = currentScript;
-        var currentScriptFolderPath = currentScriptPath.substring(0, currentScriptPath.lastIndexOf('/') + 1);
-
-        var languageRegex = /\/(en|fa|it)\//;
-
-        var newLanguage = lang;
-        var newURL = currentScriptFolderPath.replace(languageRegex, '/' + newLanguage + '/') + 'magazine.html';
-
-        window.location.href = newURL;
-      }
-    }
-  </script>
+  <script src="../../js/changeLang.js"></script>
 </body>
 
 </html>

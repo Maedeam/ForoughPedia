@@ -27,9 +27,11 @@
   <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <!--<link rel="stylesheet" href="../../css/style.css">-->
   <link rel="stylesheet" href="../../css/timeline.css">
-  <script src="../../js/timeline.js"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="../../css/style.css">
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -38,24 +40,94 @@
 </head>
 
 <body>
+
+  <!-- ======= Start Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <h1>
+          <a href="../../index.html"><span>ForoughPedia</span></a>
+        </h1>
+      </div>
+      <!-- ======= Navbar ======= -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="home.html#about">Project</a></li>
+          <li><a class="nav-link scrollto" href="guide.html">User Guide</a></li>
+          <li class="dropdown"><a href="stages.html" class="active"><span class="bg-transparent">Biography</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stages.html">Stages</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="home.html#capta">Capta</a></li>
+          <li class="dropdown"><a href="home.html#analysis"><span>Analysis</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="home.html#map1">map1</a></li>
+              <li><a href="home.html#map2">map2</a></li>
+              <li><a href="home.html#plot1">plot1</a></li>
+              <li><a href="home.html#plot2">plot2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ontology.html"><span>Ontology</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="ontology.html#conceptual-map">Conceptual Map</a></li>
+              <li><a href="ontology.html#er-model">E/R Model</a></li>
+              <li><a href="ontology.html#metadata-analysis">Metadata Analysis</a></li>
+              <li><a href="ontology.html#metadata-alignment">Metadata Alignment</a></li>
+              <li><a href="ontology.html#enhanced-er">Enhanced E/R Model</a></li>
+              <li><a href="ontology.html#theoretical-model">Theoretical Model</a></li>
+              <li><a href="ontology.html#conceptual-model">Conceptual Model</a></li>
+              <li><a href="ontology.html#items-description">Items Description</a></li>
+              <li><a href="ontology.html#uri-droduction">URI Production</a></li>
+              <li><a href="ontology.html#rdf-production">RDF Production</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="bibliography.html"><span>Bibliography</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="bibliography.html#primaryBib">Primary Bibliography</a></li>
+              <li><a href="bibliography.html#secondaryBib">Secondary Bibliography</a></li>
+              <li><a href="bibliography.html#translations">Translations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('En')">En</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('It')">It</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('Fa')">Fa</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- ======= End Header ======= -->
+
   <!--------------------
-    Mian
-  -------------------->
+      Mian
+    -------------------->
   <svg display="none">
     <symbol id="arrow">
       <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round"
         stroke-linejoin="round" stroke-width="2" />
     </symbol>
   </svg>
-  <h1>A Brief History of Unix Time</h1>
+  <br />
+  <br />
+  <h1 class="padding-top-100">A Brief Life Timeline of Forough</h1>
+  <br />
   <div id="timeline" class="timeline">
     <br />
     <div class="btn-group">
-      <button class="btn" type="button" data-action="expand">Expand All</button>
-      <button class="btn" type="button" data-action="collapse">Collapse All</button>
+      <button class="btn padding-collapse" type="button" data-action="expand">Expand All</button>
+      <button class="btn padding-collapse" type="button" data-action="collapse">Collapse All</button>
     </div>
     <!------------------------------
-      1 ===> 1934
+      1 ===> 1934 #item1
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -81,7 +153,7 @@
       </div>
     </div>
     <!------------------------------
-      2 ===> 1947
+      2 ===> 1947 #item2
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -108,7 +180,7 @@
       </div>
     </div>
     <!------------------------------
-      3 ===> 1951
+      3 ===> 1951 #item3
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -136,7 +208,7 @@
       </div>
     </div>
     <!------------------------------
-      4 ===> 1953
+      4 ===> 1953 #item4
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -169,8 +241,8 @@
         </div>
       </div>
     </div>
-    <!------------------------------
-      5 ===> 1954
+    <!------------------------------ 
+      5 ===> 1954 #item5
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -194,7 +266,7 @@
       </div>
     </div>
     <!------------------------------
-      6 ===> 1955
+      6 ===> 1955 #item6
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -205,19 +277,19 @@
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item6-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1955</time><br>
           <strong class="timeline__title">Divorce</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">Their short marriage ended in separation in 1334.</p>
         </div>
       </div>
     </div>
     <!------------------------------
-      7 ===> 1956
+      7 ===> 1956 #item7
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
@@ -228,12 +300,12 @@
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item7-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1956</time><br>
           <strong class="timeline__title">Publication of the second poetry collection: Divar (The Wall)</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item7-ctrld" role="region" aria-labelledby="item7" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">The second volume of Forough's poetry was published in 1335 under the name <a
               href="https://fa.wikipedia.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D8%B1_(%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87_%D8%B4%D8%B9%D8%B1)"
@@ -247,23 +319,23 @@
       </div>
     </div>
     <!------------------------------
-      8 ===> 1957
+      8 ===> 1957 #item8
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item8" aria-labelledby="item8-name" aria-expanded="false"
+          aria-controls="item8-ctrld" aria-haspopup="true" data-item="8">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item8-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1957</time><br>
           <strong class="timeline__title">Publication of the third poetry collection: Esyan (Rebellion)</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item8-ctrld" role="region" aria-labelledby="item8" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">In 1336, Forough published the poetry book of <a
               href="https://fa.wikipedia.org/wiki/%D8%B9%D8%B5%DB%8C%D8%A7%D9%86_(%D9%85%D8%AC%D9%85%D9%88%D8%B9%D9%87%E2%80%8C%D8%B4%D8%B9%D8%B1)"
@@ -272,23 +344,23 @@
       </div>
     </div>
     <!------------------------------
-      9 ===> 1958
+      9 ===> 1958 #item9
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item9" aria-labelledby="item9-name" aria-expanded="false"
+          aria-controls="item9-ctrld" aria-haspopup="true" data-item="9">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item9-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1958</time><br>
           <strong class="timeline__title">Beginning of cinema activities</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item9-ctrld" role="region" aria-labelledby="item9" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">Forough was introduced to <a href="https://en.wikipedia.org/wiki/Ebrahim_Golestan"
               target="_blank" rel="noopener">Ebrahim Golestan</a> and started working at Golestan Film
@@ -302,23 +374,23 @@
       </div>
     </div>
     <!------------------------------
-      10 ===> 1959
+      10 ===> 1959 #item10
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item10" aria-labelledby="item10-name" aria-expanded="false"
+          aria-controls="item10-ctrld" aria-haspopup="true" data-item="10">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item10-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1959</time><br>
           <strong class="timeline__title">Travel to England</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item10-ctrld" role="region" aria-labelledby="item10" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">Traveling to England and starting the editing of the documentary film <a
               href="https://fa.wikipedia.org/wiki/%DB%8C%DA%A9_%D8%A2%D8%AA%D8%B4" target="_blank" rel="noopener">A
@@ -327,23 +399,23 @@
       </div>
     </div>
     <!------------------------------
-      11 ===> 1960
+      11 ===> 1960 #item11
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item11" aria-labelledby="item11-name" aria-expanded="false"
+          aria-controls="item11-ctrld" aria-haspopup="true" data-item="11">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item11-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1960</time><br>
           <strong class="timeline__title">Editing documentary films</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item11-ctrld" role="region" aria-labelledby="item11" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">Collaborating with <a href="https://en.wikipedia.org/wiki/Ebrahim_Golestan"
               target="_blank" rel="noopener">Ebrahim Golestan</a> as an assistant and editor for five episodes
@@ -353,25 +425,25 @@
       </div>
     </div>
     <!------------------------------
-      12 ===> 1961
+      12 ===> 1961 #item12
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item12" aria-labelledby="item12-name" aria-expanded="false"
+          aria-controls="item12-ctrld" aria-haspopup="true" data-item="12">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item12-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1961</time><br>
           <strong class="timeline__title">Numerous cinematic activities</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item12-ctrld" role="region" aria-labelledby="item12" aria-hidden="true">
         <div class="timeline__item-body-content">
-          <p class="timeline__item-p">"- Traveling to Abadan in the company of <a
+          <p class="timeline__item-p">- Traveling to Abadan in the company of <a
               href="https://en.wikipedia.org/wiki/Ebrahim_Golestan" target="_blank" rel="noopener">Ebrahim Golestan</a>
             and <a
               href="https://fa.wikipedia.org/wiki/%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86_%D9%85%DB%8C%D9%86%D8%A7%D8%B3%DB%8C%D8%A7%D9%86"
@@ -379,40 +451,41 @@
               Minassian</a>
             to recod the scenes related to the
             movie <a href="https://www.xxx" target="_blank" rel="noopener">"Landscape of Water and Fire"</a>
-            - Acting in the short film <a href="https://www.xxx" target="_blank" rel="noopener">Khastagari
+            <br />- Acting in the short film <a href="https://www.xxx" target="_blank" rel="noopener">Khastagari
               (Courtship)</a> directed by <a href="https://en.wikipedia.org/wiki/Ebrahim_Golestan" target="_blank"
               rel="noopener">Ebrahim Golestan</a>
-            - Cooperation in the dubbing of <a href="https://www.xxx" target="_blank" rel="noopener">The Seventh
+            <br />- Cooperation in the dubbing of <a href="https://www.xxx" target="_blank" rel="noopener">The Seventh
               Seal</a> under the supervision of <a href="https://www.xxx" target="_blank" rel="noopener">xxx</a>Parviz
             Bahram
-            - Acting in the movie <a href="https://www.xxx" target="_blank" rel="noopener">Darya (The sea)</a>
+            <br />- Acting in the movie <a href="https://www.xxx" target="_blank" rel="noopener">Darya (The sea)</a>
             directed by <a href="https://en.wikipedia.org/wiki/Ebrahim_Golestan" target="_blank" rel="noopener">Ebrahim
               Golestan</a>
-            - Making a one-minute promotional film for Kaihan Institute
-            - Being sent to England to participate in training courses related to the production and editing of
-            documentary films."</p>
+            <br />- Making a one-minute promotional film for Kaihan Institute
+            <br />- Being sent to England to participate in training courses related to the production and editing of
+            documentary films.
+          </p>
         </div>
       </div>
     </div>
     <!------------------------------
-      13 ===> 1962
+      13 ===> 1962  #item13
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false"
-          aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+        <button class="timeline__arrow" type="button" id="item13" aria-labelledby="item13-name" aria-expanded="false"
+          aria-controls="item6-ctrld" aria-haspopup="true" data-item="13">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item6-name" class="timeline__meta">
+        <span id="item13-name" class="timeline__meta">
           <time class="timeline__date" datetime="2038-01-19">1962</time><br>
           <strong class="timeline__title">Production of one of the most influential documentaries in Iranian
             cinema</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
+      <div class="timeline__item-body" id="item13-ctrld" role="region" aria-labelledby="item13" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">In the summer of 1941, Forough's first trip to <a href="https://www.xxx"
               target="_blank" rel="noopener">Tabriz leprosy house (Baba Baghi)</a>
@@ -429,23 +502,23 @@
       </div>
     </div>
     <!------------------------------
-      14 ===> 1964
+      14 ===> 1964 #item14
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item14" aria-labelledby="item14-name" aria-expanded="false"
+          aria-controls="item14-ctrld" aria-haspopup="true" data-item="14">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item14-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1964</time><br>
           <strong class="timeline__title">Receiving the Oberhausen Festival Award</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item14-ctrld" role="region" aria-labelledby="item14" aria-hidden="true">
         <div class="timeline__item-body-content">
           <p class="timeline__item-p">-Receiving the award for the best documentary film from the <a
               href="https://www.xxx" target="_blank" rel="noopener">Oberhausen
@@ -461,25 +534,25 @@
       </div>
     </div>
     <!------------------------------
-      15 ===> 1965
+      15 ===> 1965 #item15
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item15" aria-labelledby="item15-name" aria-expanded="false"
+          aria-controls="item15-ctrld" aria-haspopup="true" data-item="15">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item15-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1965</time><br>
           <strong class="timeline__title">Publication of the forth poetry collection: Another Birth</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item15-ctrld" role="region" aria-labelledby="item15" aria-hidden="true">
         <div class="timeline__item-body-content">
-          <p class="timeline__item-p">"- Traveling to Germany, Italy and France
+          <p class="timeline__item-p">- Traveling to Germany, Italy and France
             - Acting in the movie <a href="https://www.xxx" target="_blank" rel="noopener">Clay and Mirror</a>
             directed by <a href="https://en.wikipedia.org/wiki/Ebrahim_Golestan" target="_blank" rel="noopener">Ebrahim
               Golestan</a>
@@ -489,56 +562,80 @@
       </div>
     </div>
     <!------------------------------
-      16 ===> 1966
+      16 ===> 1966 #item16
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item16" aria-labelledby="item16-name" aria-expanded="false"
+          aria-controls="item16-ctrld" aria-haspopup="true" data-item="16">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item16-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1966</time><br>
           <strong class="timeline__title">Interview with Bernardo Bertolucci</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item16-ctrld" role="region" aria-labelledby="item16" aria-hidden="true">
         <div class="timeline__item-body-content">
-          <p class="timeline__item-p">- Interviewing with Italian director <a href="https://www.xxx" target="_blank"
-              rel="noopener">Bernardo Bertolucci</a>
-            - In 1344, UNESCO produced a half-hour documentary film about Forough's life."</p>
+          <p class="timeline__item-p">
+            - Interviewing with Italian director <a href="https://www.xxx" target="_blank" rel="noopener"><em
+                class="greenlink">Bernardo Bertolucci</em></a>
+            <br />
+            - In 1344, UNESCO produced a short documentary film about Forough's life."
+          </p>
         </div>
       </div>
     </div>
     <!------------------------------
-      17 ===> 1967
+      17 ===> 1967 #item17
     ------------------------------>
     <div class="timeline__item">
       <div class="timeline__item-header">
-        <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false"
-          aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+        <button class="timeline__arrow" type="button" id="item17" aria-labelledby="item17-name" aria-expanded="false"
+          aria-controls="item17-ctrld" aria-haspopup="true" data-item="17">
           <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
             <use href="#arrow" />
           </svg>
         </button>
         <span class="timeline__dot"></span>
-        <span id="item5-name" class="timeline__meta">
+        <span id="item17-name" class="timeline__meta">
           <time class="timeline__date" datetime="2033-05-18">1967, February 14</time><br>
           <strong class="timeline__title">Death in 14 February</strong>
         </span>
       </div>
-      <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
+      <div class="timeline__item-body" id="item17-ctrld" role="region" aria-labelledby="item17" aria-hidden="true">
         <div class="timeline__item-body-content">
-          <p class="timeline__item-p">"- Publication of Forough's poems in Germany, Sweden, England and France.
-            - She died on 24 February due to an accident which was suspected to be a murder."</p>
+          <p class="timeline__item-p">- Publication of Forough's poems in Germany, Sweden, England and France.
+            <br />- She died on 24 February due to an accident which was suspected to be a murder.
+          </p>
         </div>
       </div>
     </div>
   </div>
+  <h1 class="padding-top-100"></h1>
 
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <a class="a-footer" href="home.html"><strong>ForoughPedia</strong>.</a>
+        <br />
+        All primary material on the site is used for educational purposes only.
+      </div>
+      <div class="credits">
+        Designed by Maede
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn">UP</button>
+
+  <script src="../../js/main.js"></script>
+  <script src="../../js/changeLang.js"></script>
+  <script src="../../js/timeline.js"></script>
 </body>
 
 </html>

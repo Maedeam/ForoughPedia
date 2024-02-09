@@ -2,97 +2,243 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>accordion page</title>
-    <link href="../../img/favicon.png" rel="icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>accordion page</title>
+  <link href="../../img/favicon.png" rel="icon">
 
-    <link rel="stylesheet" href="../../css/accordion.css">
+  <link rel="stylesheet" href="../../css/accordion.css">
+
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
+  <!-- ======= Start Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <h1>
+          <a href="../../index.html"><span>ForoughPedia</span></a>
+        </h1>
+      </div>
+      <!-- ======= Navbar ======= -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="home.html#about">Project</a></li>
+          <li><a class="nav-link scrollto active" href="guide.html">User Guide</a></li>
+          <li class="dropdown"><a href="stages.html"><span>Biography</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stages.html">Stages</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="home.html#capta">Capta</a></li>
+          <li class="dropdown"><a href="home.html#analysis"><span>Analysis</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="home.html#map1">map1</a></li>
+              <li><a href="home.html#map2">map2</a></li>
+              <li><a href="home.html#plot1">plot1</a></li>
+              <li><a href="home.html#plot2">plot2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ontology.html"><span>Ontology</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="ontology.html#conceptual-map">Conceptual Map</a></li>
+              <li><a href="ontology.html#er-model">E/R Model</a></li>
+              <li><a href="ontology.html#metadata-analysis">Metadata Analysis</a></li>
+              <li><a href="ontology.html#metadata-alignment">Metadata Alignment</a></li>
+              <li><a href="ontology.html#enhanced-er">Enhanced E/R Model</a></li>
+              <li><a href="ontology.html#theoretical-model">Theoretical Model</a></li>
+              <li><a href="ontology.html#conceptual-model">Conceptual Model</a></li>
+              <li><a href="ontology.html#items-description">Items Description</a></li>
+              <li><a href="ontology.html#uri-droduction">URI Production</a></li>
+              <li><a href="ontology.html#rdf-production">RDF Production</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="bibliography.html"><span>Bibliography</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="bibliography.html#primaryBib">Primary Bibliography</a></li>
+              <li><a href="bibliography.html#secondaryBib">Secondary Bibliography</a></li>
+              <li><a href="bibliography.html#translations">Translations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('En')">En</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('It')">It</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('Fa')">Fa</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- ======= End Header ======= -->
 
+  <section id="hero">
+    <div class="container text-guide" data-aos="fade-up">
+      <div class="section-header section-header-negetive">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <br>
     <ul class="accordion">
-        <li class="accordion__item-contact">
-            <div class="accordion__overlay">
-                <h2 class="accordion__title">contact</h2>
-                <p class="accordion__description">
-                    <a href="#" class="contact-title">Contact</a>
-                    <br>
-                    <span class="mb-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                        nisi sed sollicitudin pellentesque.</span>
+      <li class="accordion__item-contact">
+        <div class="accordion__overlay">
+          <h2 class="accordion__title">User Guide</h2>
+          <p class="accordion__description">
+            <span class="mb-1 size-for-guide">
+              "The ForoughPedia can be explored with the help of moving along 3 different itineraries, each divided into
+              3 stages.
 
-                </p>
-            </div>
-        </li>
-        <li class="accordion__item">
-            <img class="accordion__image" src="../../img/Item1.jpg" />
-            <div class="accordion__overlay">
-                <h2 class="accordion__title">Forough Farrokhzad</h2>
-                <p class="accordion__description">
+              In every stages, users can read about 3 aspect of Forough:
+              her life, work and mindset; which start and end in specific years of her life. Additionally, there is
+              another stage
+              providing information about ""After Death.""
 
-                    <span class="mb-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                        nisi sed sollicitudin pellentesque.</span>
-                    <br>
-                    <span class="mb-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                        nisi sed sollicitudin pellentesque.</span>
-                    <br>
-                    <span class="mb-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                        nisi sed sollicitudin pellentesque.</span>
+              The menu bar allows users to access all pages, in every part of the ForoughPedia, including the ability to
+              toggle
+              between 3 different languages: English, Italian, and Persian (Farsi).
 
-                </p>
-            </div>
-        </li>
-        <li class="accordion__item">
-            <img class="accordion__image" src="../../img/Item2.jpg" />
-            <div class="accordion__overlay">
-                <h2 class="accordion__title">Forough Farrokhzad</h2>
-                <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                    nisi sed sollicitudin pellentesque.</p>
-            </div>
-        </li>
-        <li class="accordion__item">
-            <img class="accordion__image" src="../../img/Item3.jpg" />
-            <div class="accordion__overlay">
-                <h2 class="accordion__title">Forough Farrokhzad</h2>
-                <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                    nisi sed sollicitudin pellentesque.</p>
-            </div>
-        </li>
-        <li class="accordion__item">
-            <img class="accordion__image" src="../../img/Item4.jpg" />
-            <div class="accordion__overlay">
-                <h2 class="accordion__title">Forough Farrokhzad</h2>
-                <p class="accordion__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit
-                    nisi sed sollicitudin pellentesque.</p>
-            </div>
-        </li>
+              The ForoughPedia was originally written in both English and Persian, then translated into Italian to
+              provide a triple
+              version. Concerning the titles, the decision was to always maintain the original version, but there is
+              potential for improvement in the Italian translation."
+            </span>
+            <br />
+            <a href="#" class="contact-title">Link for Test</a>
+          </p>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <img class="accordion__image" src="../../img/guide1.jpg" />
+        <div class="accordion__overlay">
+          <h2 class="accordion__title">Stage 1</h2>
+          <p class="accordion__description">
+            <span class="mb-1 size-for-guide">
+              During this period of Forugh's life, we will delve into her personal life and experiences during
+              childhood and
+              adolescence. The "Life" section will provide a detailed account of the events and experiences of
+              this stage. In "Works,"
+              we will examine the creations born out of this period, including her poems and writings.
+              Additionally, "Ideology" will
+              elucidate Forugh's mindset and ideals during this phase
+            </span>
+          </p>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <img class="accordion__image" src="../../img/guide2.jpg" />
+        <div class="accordion__overlay">
+          <h2 class="accordion__title">Stage 2</h2>
+          <p class="accordion__description">
+            <span class="mb-1 size-for-guide">
+              During this period of Forugh's life, we will delve into her personal life and experiences during
+              childhood and
+              adolescence. The "Life" section will provide a detailed account of the events and experiences of
+              this stage. In "Works,"
+              we will examine the creations born out of this period, including her poems and writings.
+              Additionally, "Ideology" will
+              elucidate Forugh's mindset and ideals during this phase
+            </span>
+          </p>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <img class="accordion__image" src="../../img/guide3.jpg" />
+        <div class="accordion__overlay">
+          <h2 class="accordion__title">Stage 3</h2>
+          <p class="accordion__description">
+            <span class="mb-1 size-for-guide">
+              During this period of Forugh's life, we will delve into her personal life and experiences during
+              childhood and
+              adolescence. The "Life" section will provide a detailed account of the events and experiences of
+              this stage. In "Works,"
+              we will examine the creations born out of this period, including her poems and writings.
+              Additionally, "Ideology" will
+              elucidate Forugh's mindset and ideals during this phase
+            </span>
+          </p>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <img class="accordion__image" src="../../img/guide4.jpg" />
+        <div class="accordion__overlay">
+          <h2 class="accordion__title">After Death</h2>
+          <p class="accordion__description">
+            <span class="mb-1 size-for-guide">
+              During this period of Forugh's life, we will delve into her personal life and experiences during
+              childhood and
+              adolescence. The "Life" section will provide a detailed account of the events and experiences of
+              this stage. In "Works,"
+              we will examine the creations born out of this period, including her poems and writings.
+              Additionally, "Ideology" will
+              elucidate Forugh's mindset and ideals during this phase
+            </span>
+          </p>
+        </div>
+      </li>
     </ul>
+  </section>
 
-    <button id="goBackBtn">back</button>
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <a class="a-footer" href="home.html"><strong>ForoughPedia</strong>.</a>
+        <br />
+        All primary material on the site is used for educational purposes only.
+      </div>
+      <div class="credits">
+        Designed by Maede
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn">UP</button>
 
 </body>
 <script src="../../vendor/jquery/jquery.min.js"></script>
 <script src="../../js/changeLang.js"></script>
+<script src="../../js/main.js"></script>
+
 <script>
-    toggleBackButton();
-
-    $(window).on('popstate', function () {
-        toggleBackButton();
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#scrollToTopBtn").fadeIn();
+      } else {
+        $("#scrollToTopBtn").fadeOut();
+      }
     });
-    $('#goBackBtn').click(function () {
-        window.history.back();
-        return false;
+    $("#scrollToTopBtn").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 800);
+      return false;
     });
 
-    function toggleBackButton() {
-        if (window.history.length > 1) {
-            $('#goBackBtn').fadeIn();
-        } else {
-            $('#goBackBtn').fadeOut();
-        }
-    }
-
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#scrollToTopBtn').fadeIn();
+      } else {
+        $('#scrollToTopBtn').fadeOut();
+      }
+    });
+    $('#scrollToTopBtn').click(function () {
+      $('html, body').animate({ scrollTop: 0 }, 800);
+      return false;
+    });
+  });
 </script>
 
 </html>

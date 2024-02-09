@@ -10,6 +10,7 @@ function wrapChars(selector) {
   e.innerText = "";
 
   let words = text.split(" ");
+  console.log(words);
   words.forEach((word) => {
     var div = document.createElement("div");
     div.classList.add("word");
@@ -23,29 +24,24 @@ function wrapChars(selector) {
 }
 
 function pickLetters() {
-  let letters = [].slice.call(document.getElementsByTagName("span"));
-  let index = 0;
+  return new Promise((resolve, reject) => {
+    let letters = [].slice.call(document.getElementsByTagName("span"));
+    let index = 0;
 
-  function switchLetter() {
-    let item = letters[index];
-    item.classList.add("show");
-    letters.shift();
-    if (letters.length > 0) {
+    function switchLetter() {
+      let item = letters[index];
+      if (!item) {
+        resolve();
+        return;
+      }
+      item.classList.add("show");
+      letters.shift();
       setTimeout(switchLetter, 50);
     }
-  }
-  switchLetter();
+    switchLetter();
+  });
 }
 
-window.addEventListener(
-  "load",
-  function () {
-    addClickReplay("title");
-    wrapChars("title");
-    pickLetters();
-  },
-  true
-);
 
 function addClickReplay(selector) {
   document.addEventListener(
@@ -67,12 +63,14 @@ function addClickReplay(selector) {
 document.addEventListener("DOMContentLoaded", function () {
   addClickReplay("title");
   wrapChars("title");
-  pickLetters();
 
   const btn = document.querySelector(".Literature-Visualization-btn");
   btn.addEventListener("click", function () {
     window.location.href = "loading.html";
   });
+});
+document.addEventListener("DOMContentLoaded", async function () {
+  await pickLetters();
 });
 
 /*------------------------------

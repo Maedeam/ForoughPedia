@@ -12,6 +12,10 @@
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 .text-overlay {
   position: absolute;
   top: 50%;
