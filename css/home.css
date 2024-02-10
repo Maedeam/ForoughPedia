@@ -81,6 +81,10 @@ span.show {
   animation: fade-in 800ms ease 1 forwards;
 }
 
+.project-text {
+  font-size: larger !important;
+}
+
 .word:nth-child(1) {
   text-transform: uppercase;
   font-size: 1em;
@@ -92,14 +96,14 @@ span.show {
   text-transform: uppercase;
   animation: slide-left var(--t1) ease-out 1 forwards,
     slide-left2 var(--t11) var(--t1) linear 1 forwards;
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .word:nth-child(3n) {
   text-transform: uppercase;
   animation: slide-right var(--t2) ease-out 1 forwards,
     slide-right2 var(--t21) var(--t2) linear 1 forwards;
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .word:nth-child(2) {
@@ -135,7 +139,8 @@ span.show {
   font-size: 1.5em;
 }
 
-.word:nth-child(8) {}
+.word:nth-child(8) {
+}
 
 .word:nth-child(9) {
   text-transform: uppercase;
