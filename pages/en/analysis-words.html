@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ForoughPedia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../img/favicon.png" rel="icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS and JS File -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/main.js"></script>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script type="text/javascript" src="../../js/mapdata.js"></script>
+  <script type="text/javascript" src="../../js/worldmap.js"></script>
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <h1>
+          <a href="../../index.html"><span>ForoughPedia</span></a>
+        </h1>
+      </div>
+      <!-- ======= Navbar ======= -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="home.html#about">Project</a></li>
+          <li><a class="nav-link scrollto" href="guide.html">User Guide</a></li>
+          <li class="dropdown"><a href="stages.html"><span>Biography</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stages.html">Stages</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#capta">Capta</a></li>
+          <li class="dropdown" class="active"><a href="#analysis"><span>Analysis</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="analysis-map.html#geo-freq">Geo Frequency</a></li>
+              <li><a href="analysis-map.html#heat-map">Heat Map</a></li>
+              <li><a href="#wo-cloud">Word Clouds</a></li>
+              <li><a href="#result">Result</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="ontology.html"><span>Ontology</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="ontology.html#conceptual-map">Conceptual Map</a></li>
+              <li><a href="ontology.html#er-model">E/R Model</a></li>
+              <li><a href="ontology.html#metadata-analysis">Metadata Analysis</a></li>
+              <li><a href="ontology.html#metadata-alignment">Metadata Alignment</a></li>
+              <li><a href="ontology.html#enhanced-er">Enhanced E/R Model</a></li>
+              <li><a href="ontology.html#theoretical-model">Theoretical Model</a></li>
+              <li><a href="ontology.html#conceptual-model">Conceptual Model</a></li>
+              <li><a href="ontology.html#items-description">Items Description</a></li>
+              <li><a href="ontology.html#uri-droduction">URI Production</a></li>
+              <li><a href="ontology.html#rdf-production">RDF Production</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="bibliography.html"><span>Bibliography</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="bibliography.html#primaryBib">Primary Bibliography</a></li>
+              <li><a href="bibliography.html#secondaryBib">Secondary Bibliography</a></li>
+              <li><a href="translations.html">Translations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('En')">En</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('It')">It</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('Fa')">Fa</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- ======= Initial ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">" <span>ForoughPedia</span> "</h1>
+      </br>
+      </br>
+      </br>
+      <h1 class="mb-4 pb-0">A <span>Knowledge WebSite</span> about</br> Forough Farrokhzad</h1>
+      </br>
+      </br>
+    </div>
+  </section>
+  <div class="bo">
+  </div>
+  <section id="schedule" class="section-with-bg pb-0">
+    <div class="container" data-aos="fade-up">
+    </div>
+
+    <!-- ======= Analysis ======= -->
+    <div class="bo">
+    </div>
+    <section class="padding-top-60" id="analysis">
+      <!-- ======= Analysis Explanation ======= -->
+      <div class="container" data-aos="fade-up" id="conceptual-map">
+        <div class="section-header section-header-negetive">
+          <h1>Analysis</h1>
+          &nbsp;
+          &nbsp;
+          <p>In this section, we have a different look at Forough’s poems through the new lens of data visualization
+            using
+            statistical analysis of the main words used by the poet in each book. This type of data analysis could
+            provide us with
+            the mindset of the poet and brighten the transformative journey of the poet as an influential character in
+            forming the
+            literature of a nation. This method can be used by sociologists to make accurate determinations and better
+            analyses of
+            cultural transformations in different societies. For instance, using the data analysis of works of prominent
+            writers and
+            poets, sociologists can study the intellectual and cultural line of a society and even predict it’s future
+            direction.
+          </p>
+        </div>
+      </div>
+      <!-- ======= Word cloud graphs ======= -->
+      <div class="bo">
+      </div>
+      <div id="wo-cloud" class="container padding-top-50" data-aos="fade-up" id="er-model">
+        <div class="section-header section-header-negetive">
+          &nbsp;
+          &nbsp;
+          <h2>Word Cloud Graphs</h2>
+          <br />
+          <br />
+          <br />
+          <p>
+            In the first step, the total collections published by the poet are analyzed by Voyant. Based on the words
+            that have the
+            highest frequency, it can be inferred that the main General theme of Forough poems in all of her collections
+            is likely
+            related to her emotions, personal feelings, and relationships with people. However, as a new sight to
+            Forough’s journey,
+            we analyze each of her books separately to better understand her literary orientation.
+          </p>
+          <br />
+          <br />
+          <br />
+          <h2>Book 1, “The Captive” word-cloud</h2>
+          <br />
+          <br />
+          <br />
+          <div>
+            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-a7435e2953f945f678aa437a1fc336bf&whiteList=&visible=105&corpus=29c446b37d7bc3b9121e0c3277a9ba3e'>
+            </iframe>
+          </div>
+          <br />
+          <br />
+          <br />
+          <hr />
+          <h2>Text analysis:</h2>
+          <br />
+          <p>
+            On the frequency of prominent words of the book, it could be concluded that the main subject of the
+            book appears to involve personal emotions and romantic relationships. here are the main topics in English:
+            <br />
+            <br />
+            Personal Feelings <em>(heart, love, emotions, hope, sorrow, dreams, longing, grief, hope)</em>
+            <br />
+            Emotional Relationships <em>(gaze, kiss, beginning, intimacy)</em>
+            <br />
+            Darkness and Light <em>(night, darkness, star, light)</em>
+            <br />
+            Body and Physicality <em>(eye, lip, nudity, caress, touch)</em>
+            <br />
+            Soul and Beliefs <em>(soul, secret, moment, self-awareness)</em>
+            <br />
+            <br />
+            For the next analysis, we divide these words into three categories:
+            <br />
+            words with positive orientation, negative orientation, and neutral words:
+            <br />
+            <br />
+            <strong>Neutral Words</strong> <em>Total Number: 258</em>
+            <br />
+            Containing: eye (53), lip (49), gaze (39), know (26), star (21), moment (20), body (20), soul (19)
+            <br />
+            <br />
+            <strong>Negative Words</strong> <em>Total Number: 159</em>
+            <br />
+            Containing: night (59), silent (36), darkness (23), sorrow (21), secret (20)
+            <br />
+            <br />
+            <strong>Positive Words</strong> <em>Total Number: 324</em>
+            <br />
+            Containing: heart (102), love (62), kiss (37), embrace (29), desire (27), longing (26), hope (21)
+          </p>
+          <br />
+          <br />
+          <br />
+          <hr />
+          <h2>Text analysis</h2>
+          <p>
+            For the next analysis, we divide these words into three categories,
+            <br />
+            words with <em>positive orientation</em>, <em>negative orientation</em>, and <em>neutral words</em>:
+            <br />
+            <strong>Neutral words:</strong> <em>Total Number: 360</em>
+            <br />
+            Containing: heart (102), eye (53), lip (49), gaze (39), know (26), star (21), moment (20), body (20), soul
+            (19)
+            <br />
+            <strong>Negative words:</strong> <em>Total Number: 159</em>
+            <br />
+            Containing: night (59), silent (36), darkness (23), sorrow (21), secret (20)
+            <br />
+            <strong>Positive words:</strong> <em>Total Number: 222</em>
+            <br />
+            Containing: love (62), kiss (37), embrace (29), desire (27), longing (26), hope (21)
+          </p>
+          <br />
+          <br />
+          <br />
+          <div class="center">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Gender', 'Number'],
+                  ['Neutral words', 360],
+                  ['Negative words', 159],
+                  ['Positive words', 222]
+                ]);
+                var options = {
+                  title: 'Orientation Distribution',
+                  pieHole: 0.4,
+                  slices: {
+                    0: { color: "#009b77", offset: 0.1 },
+                    1: { color: "#7c93c2" }
+                  },
+                  backgroundColor: '#F6F7FD',
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                chart.draw(data, options);
+              }
+            </script>
+            <div id="donutchart"
+              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            Literary analysis:
+            here are five main themes of the book:
+            Emotions and Relationships: Words like "heart," "love," "sorrow," "desire," "longing," and "embrace" suggest
+            a focus on
+            emotions and relationships. This theme may explore the complexities of love, longing, sorrow, desire, and
+            the deep
+            connections between individuals.
+            Introspection and Existentialism: The presence of words such as "soul," "know," "silent," "darkness," and
+            "secret"
+            indicates themes related to introspection and existentialism. This motif could delve into questions of
+            identity, inner
+            struggles, personal revelations, and the search for meaning in life.
+            Nature and Symbolism: Terms like "star," "night," "moment," and "hope" imply themes of nature and symbolism.
+            This theme
+            may involve reflections on the beauty and transience of life, as well as the symbolism associated with
+            natural elements
+            like stars and the night sky.
+            Communication and Connection: The inclusion of words like "eye," "gaze," "lip," "kiss," and "body" suggests
+            themes
+            related to communication and connection. This motif may explore the power of nonverbal communication,
+            physical intimacy,
+            and the significance of human touch in forming connections.
+            Yearning and Aspiration: The presence of words such as "hope," "desire," "longing," and "embrace" points to
+            themes of
+            yearning and aspiration. This theme may involve the exploration of dreams, aspirations, and the pursuit of a
+            better
+            future, as well as the emotional journey associated with striving for one's goals.
+            These themes offer insight into the overarching motifs and subjects explored within the book, reflecting its
+            potential
+            focus on the complexities of human experience, relationships, and existential inquiries.
+            Based on the density of negative and positive categories we could conclude that “The Captive” which is
+            written in the
+            first stage of the poet's life possesses mostly a positive theme reflecting her hopefulness and positive
+            attitude to
+            life. We know that while writing “The Captive” Forough was in Love with Paviz, a love that resulted in the
+            marriage
+            bond. So, despite the book name that beers a negative meaning, Forough's thoughts and feelings describe her
+            as a free
+            happy young girl full of hope and Passion for life.
+          </p>
+          <br />
+          <br />
+          <br />
+          <h2>Book 2, “The Wall" word-cloud</h2>
+          <br />
+          <br />
+          <br />
+          <div>
+            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-cb8711b7fc6abf719f5e0a89f2093124&whiteList=&visible=115&corpus=981e2228b7ffc5d4a52854fd93e508b7'>
+            </iframe>
+          </div>
+          <br />
+          <br />
+          <p>
+          <h2>Text analysis</h2>
+          <p>
+            Here are the words categorized into <em>positive orientation</em>, <em>negative orientation</em>, and
+            <em>neutral words</em> along with their frequencies:
+            <br />
+            <strong>Neutral words:</strong> <em>Total Number: 196</em>
+            <br />
+            Containing: heart(31), eye(37), path(20), lip(19), body(17), soul(15), gaze(13), breeze(13), sky(12)
+            <br />
+            <strong>Negative words:</strong> <em>Total Number: 98</em>
+            <br />
+            Containing: night(28), shadow(22), sorrow(16), silent(16), darkness(16)
+            <br />
+            <strong>Positive words:</strong> <em>Total Number: 98</em>
+            <br />
+            Containing: love(22), sun(19), dream(17), longing(15), desire(13), kiss(12)
+          </p>>
+          <br />
+          <br />
+          <br />
+          <div class="center">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Gender', 'Number'],
+                  ['Neutral words', 196],
+                  ['Negative words', 98],
+                  ['Positive words', 98]
+                ]);
+                var options = {
+                  title: 'Orientation Distribution',
+                  pieHole: 0.4,
+                  slices: {
+                    0: { color: "#009b77", offset: 0.1 },
+                    1: { color: "#7c93c2" }
+                  },
+                  backgroundColor: '#F6F7FD',
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                chart.draw(data, options);
+              }
+            </script>
+            <div id="donutchart"
+              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            Literary analysis: Here are five main themes of the book:
+            Inner and External Perception: Words like "eye," "heart," "soul," and "gaze" suggest a focus on perception,
+            both
+            internal and external. This theme may explore how individuals perceive themselves, others, and the world
+            around them, as
+            well as the depth of their emotions and desires.
+            Love and Longing: The presence of words like "love," "longing," "desire," "kiss," and "sorrow" indicates
+            themes centered
+            around love, emotional connections, and yearning. This theme may delve into various aspects of romantic
+            relationships,
+            including passion, loss, and the complexities of desire.
+            Night and Darkness: Words such as "night," "shadow," "darkness," and "silent" suggest themes related to
+            darkness and the
+            night. This motif could symbolize various concepts, including mystery, solitude, introspection, and the
+            unknown.
+            Journey and Exploration: Terms like "path," "dream," "sky," and "breeze" imply themes of journey and
+            exploration, both
+            physical and metaphorical. This theme may involve quests for self-discovery, spiritual enlightenment, or the
+            pursuit of
+            dreams and aspirations.
+            Body and Sensuality: The presence of words like "lip," "body," "sensuality," and "kiss" suggests themes
+            related to
+            physicality and sensuality. This motif may explore the connections between the body and the self, as well as
+            the
+            experiences of pleasure, intimacy, and desire.
+            These themes provide insight into the overarching motifs and subjects explored within the book, reflecting
+            its potential
+            focus on the complexities of human emotions, relationships, and existential journeys.
+            This analysis can reveal a new interpretation that may not have been discernible before. As it’s obvious
+            from word
+            analysis, the count of negative and positive words are exactly the same. We know that “The Wall” poems were
+            written
+            during the last years of marriage of Forough when she was grappling with the problems of a housebound woman
+            trapped in
+            the bonds of marriage in the traditional society of that time while still loving her husband. This
+            struggling situation
+            caused the passion, eagerness, and freshness of a young girl to fade. Though a mixture of hope and
+            frustration existed
+            in her equally. The Wall was dedicated to her ex-partner as a tribute to their deep love.
+          </p>
+          <br />
+          <br />
+          <br />
+          <h2>Book 3, 'Rebellion" word-cloud</h2>
+          <br />
+          <br />
+          <br />
+          <div>
+            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-479d3ebd1ce7a5ddd3c909851d12372c&whiteList=&visible=105&corpus=7a83597fa46d95fa2edff6e042a33612'>
+            </iframe>
+          </div>
+          <br />
+          <br />
+          <br />
+          <h2>Text analysis</h2>
+          <br />
+          <p>
+            Most frequent words in the corpus are categorized as bellow:
+            <br />
+            <strong>Neutral words:</strong> <em>Total Number: 259</em>
+            <br />
+            Containing: eye(30), world(26), god(26), heart(25), path(25), day(21), moment(18), face(18), existence(18),
+            chest(14)
+            <br />
+            <strong>Negative words:</strong> <em>Total Number: 156</em>
+            <br />
+            Containing: dark(33), night(30), silent(18), pain(18), cry(15), hell(14), darkness(14), cold(14) <br />
+            <strong>Positive words:</strong> <em>Total Number: 48</em>
+            <br />
+            Containing: love(24), hand(24)
+          </p>>
+          <br />
+          <br />
+          <br />
+          <div class="center">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Gender', 'Number'],
+                  ['Neutral words', 259],
+                  ['Negative words', 156],
+                  ['Positive words', 48]
+                ]);
+                var options = {
+                  title: 'Orientation Distribution',
+                  pieHole: 0.4,
+                  slices: {
+                    0: { color: "#009b77", offset: 0.1 },
+                    1: { color: "#7c93c2" }
+                  },
+                  backgroundColor: '#F6F7FD',
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                chart.draw(data, options);
+              }
+            </script>
+            <div id="donutchart"
+              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            Literary analysis: Here are five main themes of the book:
+            Darkness and Night: Represented by words like "dark," "night," "darkness," and "cold," these themes suggest
+            a prevalent
+            motif of darkness, symbolizing various aspects such as despair, mystery, or the unknown.
+            Inner and External Perception: Words like "eye," "face," and "heart" indicate a focus on perception, both
+            internal and
+            external. This theme may explore how individuals perceive themselves, others, and the world around them.
+            Existential and Spiritual Exploration: Terms like "existence," "god," and "hell" suggest themes related to
+            existentialism and spiritual exploration. This could involve questioning the meaning of life, grappling with
+            religious
+            or philosophical beliefs, or confronting existential crises.
+            Love and Relationships: The presence of words like "love," "hand," and "heart" suggests themes centered
+            around love,
+            relationships, and emotional connections. This theme may delve into various aspects of human relationships,
+            including
+            love, loss, longing, and intimacy.
+            Suffering and Pain: Words such as "pain," "silent," "cry," and "chest" indicate themes related to suffering
+            and
+            emotional turmoil. This theme may explore the experiences of pain, grief, and hardship, as well as the
+            internal
+            struggles faced by individuals.
+            These themes provide a glimpse into the overarching motifs and subjects explored within the book, reflecting
+            its
+            potential focus on existential, emotional, and spiritual aspects of the human experience.
+          </p>
+          <br />
+          <br />
+          <br />
+          <h2>Book 4, 'Another Birth" word-cloud</h2>
+          <br />
+          <br />
+          <br />
+          <div>
+            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-ffb95fced11637e28a26c575ed8954ee&whiteList=&visible=105&corpus=f508e4b846facce3b975de1108e9dd6c'>
+            </iframe>
+          </div>
+          <br />
+          <br />
+          <br />
+          <p>
+            Most frequent words in the corpus are categorized as bellow:
+            <br />
+            <strong>Neutral words:</strong> <em>Total Number: 379</em>
+            <br />
+            Containing: water(40), heart(34), eye(31), hand(29), star(29), window(24), fish(23), body(23), scent(21),
+            moon(21),
+            wind(20), seventy(20), moment(20), day(34)
+            <br />
+            <strong>Negative words:</strong> <em>Total Number: 89</em>
+            <br />
+            Containing: darkness(24), night(65)
+            <strong>Positive words:</strong> <em>Total Number: 104</em>
+            <br />
+            Containing: love(34), life(26), light(23), flower(21)
+          </p>>
+          <br />
+          <br />
+          <br />
+          <div class="center">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Gender', 'Number'],
+                  ['Neutral words', 379],
+                  ['Negative words', 89],
+                  ['Positive words', 104]
+                ]);
+                var options = {
+                  title: 'Orientation Distribution',
+                  pieHole: 0.4,
+                  slices: {
+                    0: { color: "#009b77", offset: 0.1 },
+                    1: { color: "#7c93c2" }
+                  },
+                  backgroundColor: '#F6F7FD',
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                chart.draw(data, options);
+              }
+            </script>
+            <div id="donutchart"
+              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            Literary analysis: Based on the most frequently recurring words in the provided list, here are five main
+            themes of the
+            book:
+            Night and Darkness: The prominence of words like "night," "darkness," "star," "moon," and "window" suggests
+            a theme
+            centered around nighttime and darkness. This motif may explore the mysteries, solitude, and introspection
+            associated
+            with the night, as well as the symbolism of darkness in literature.
+            Love and Relationships: The inclusion of words such as "love," "heart," "hand," "life," "body," and "scent"
+            indicates
+            themes related to love and relationships. This theme may involve the exploration of romantic relationships,
+            emotional
+            connections, and the experiences of love and longing.
+            Nature and Symbolism: Terms like "water," "fish," "flower," and "wind" imply themes of nature and symbolism.
+            This motif
+            may involve reflections on the beauty and symbolism of the natural world, as well as the interconnectedness
+            of humans
+            with their environment.
+            Time and Transience: The presence of words like "day," "seventy," and "moment" suggests themes related to
+            time and
+            transience. This theme may explore the passage of time, the fleeting nature of moments, and the
+            inevitability of change
+            and impermanence.
+            Light and Hope: The inclusion of words such as "light," "life," and "hope" points to themes of light and
+            hope. This
+            motif may involve reflections on illumination, optimism, and the pursuit of brighter futures, as well as the
+            symbolic
+            significance of light as a source of guidance and inspiration.
+
+            These themes offer insight into the overarching motifs and subjects explored within the book, reflecting its
+            potential
+            focus on the complexities of human experience, relationships, nature, and the passage of time.
+
+          </p>
+          <br />
+          <br />
+          <br />
+          <h2>Book 5, 'Let's Believe in …' word-cloud</h2>
+          <br />
+          <br />
+          <br />
+          <div>
+            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-3282bf8c3b8de228093cfaa41751dc5f&whiteList=&visible=105&corpus=adef33c5a0f0662a7d7fc3411ed2c261'>
+            </iframe>
+          </div>
+          <br />
+          <br />
+          <br />
+          <p>
+            Most frequent words in the corpus are categorized as bellow:
+            <br />
+            <strong>Neutral words:</strong> <em>Total Number: 115</em>
+            <br />
+            Containing: sound(23), time(19), heart(11), hand(10), wind(9), look(9), stop(8), moment(8), season(8),
+            day(10)
+            <br />
+            <strong>Negative words:</strong> <em>Total Number: 35</em>
+            <br />
+            Containing: night(15), cold(12), lost(8)
+            <strong>Positive words:</strong> <em>Total Number: 92</em>
+            <br />
+            Containing: love(13), flower(11), sun(11), beginning(9), garden(20), window(16), mother(12)
+          </p>><br />
+          <br />
+          <br />
+          <div class="center">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Gender', 'Number'],
+                  ['Neutral words', 115],
+                  ['Negative words', 35],
+                  ['Positive words', 92]
+                ]);
+                var options = {
+                  title: 'Orientation Distribution ',
+                  pieHole: 0.4,
+                  slices: {
+                    0: { color: "#009b77", offset: 0.1 },
+                    1: { color: "#7c93c2" }
+                  },
+                  backgroundColor: '#F6F7FD',
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                chart.draw(data, options);
+              }
+            </script>
+            <div id="donutchart"
+              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            Literary analysis: Here are five main themes of the book:
+            Nature and Garden: The repetition of words like "garden," "flower," "sun," "wind," and "season" suggests
+            themes related
+            to nature and the environment. This motif may involve reflections on the beauty of the natural world,
+            growth, change,
+            and the passage of seasons.
+            Time and Transience: The inclusion of words such as "time," "day," "night," "moment," and "beginning"
+            indicates themes
+            associated with time and its passage. This theme may explore the fleeting nature of moments, the cyclical
+            nature of
+            time, and reflections on beginnings and endings.
+            Love and Relationships: Terms like "love," "heart," "mother," and "hand" imply themes related to love and
+            relationships.
+            This motif may involve explorations of familial bonds, maternal love, emotional connections, and the
+            complexities of
+            human relationships.
+            Sensory Experience: The presence of words like "sound," "window," "cold," "look," and "lost" suggests themes
+            related to
+            sensory experiences and perception. This theme may involve reflections on sights, sounds, sensations, and
+            the impact of
+            sensory stimuli on human emotions and experiences.
+            Journey and Exploration: The repetition of words such as "stop," "moment," and "lost" hints at themes of
+            journey and
+            exploration. This motif may involve narratives of personal growth, self-discovery, and the quest for meaning
+            or purpose.
+            These themes offer insight into the overarching motifs and subjects explored within the book, reflecting its
+            potential
+            focus on nature, time, relationships, sensory experiences, and personal journeys.
+
+          </p>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- ======= plot2 ======= -->
+      <div class="bo">
+      </div>
+      <div id="plot2" class="container padding-top-50" data-aos="fade-up" id="metadata-analysis">
+        <div class="section-header section-header-negetive">
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          <h2>plot2</h2>
+          <p>The table below shows the <b>metadata standards</b> used by the institutions to describe the selected
+            items.
+            Some of them explicitly declared the standard(s) used for the data they manipulated, while for those
+            not
+            declared, the <em>common standards</em> most related to the element provided were chosen. All
+            standards
+            allowed to the main <a href="www.google.com" target="_blank" rel="noopener">subject</a>.
+          </p>
+
+
+
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Book', 'Pos/Neg'],
+                ['Book 1', 1.4],
+                ['Book 2', 1.0],
+                ['Book 3', 0.3],
+                ['Book 4', 1.6],
+                ['Book 5', 2.9]
+              ]);
+
+              var options = {
+                title: 'Company Performance',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+              };
+
+              var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+              chart.draw(data, options);
+            }
+          </script>
+          <div id="curve_chart"
+            style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
+          </div>
+
+
+
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <br />
+          <br />
+          <br />
+        </div>
+    </section>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <a class="a-footer" href="home.html" target="_blank"
+            rel="noopener"><strong>ForoughPedia</strong></a>
+          <br />
+          All primary material on the site is used for educational purposes only.
+        </div>
+        <div class="credits">
+          Designed by <a class="a-footer" href="mailto:maede.hajjari@studio.unibo.it" target="_blank"><strong>Maede
+              Hajjari</strong></a>
+        </div>
+      </div>
+    </footer>
+    <!-- ======= UP Button ======= -->
+    <button id="scrollToTopBtn">UP</button>
+    <!-- Vendor JS Files -->
+    <script src="../../vendor/aos/aos.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../../vendor/php-email-form/validate.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/changeLang.js"></script>
+</body>
+
+</html>

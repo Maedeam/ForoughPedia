@@ -30,7 +30,6 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
-
   <script type="text/javascript" src="../../js/mapdata.js"></script>
   <script type="text/javascript" src="../../js/worldmap.js"></script>
 
@@ -63,8 +62,8 @@
             <ul>
               <li><a href="#geo-freq">Geo Frequency</a></li>
               <li><a href="#heat-map">Heat Map</a></li>
-              <li><a href="#wo-cloud">Word Clouds</a></li>
-              <li><a href="#plot2">plot2</a></li>
+              <li><a href="analysis-words.html#wo-cloud">Word Clouds</a></li>
+              <li><a href="analysis-words.html#result">Surprising Result</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="ontology.html"><span>Ontology</span> <i class="bi bi-chevron-down"></i></a>
@@ -86,7 +85,7 @@
             <ul>
               <li><a href="bibliography.html#primaryBib">Primary Bibliography</a></li>
               <li><a href="bibliography.html#secondaryBib">Secondary Bibliography</a></li>
-              <li><a href="bibliography.html#translations">Translations</a></li>
+              <li><a href="translations.html">Translations</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
@@ -122,32 +121,44 @@
     <div class="bo">
     </div>
     <section id="capta">
-      <div class="container" data-aos="fade-up" id="conceptual-map">
+      <div class="container" data-aos="fade-up">
         <div class="section-header section-header-negetive">
           <h1>Capta</h1>
           &nbsp;
           &nbsp;
-          <p>"The gathered datasets, are the essential basis for creating the visual representations in the project. In
-            this section,
-            the important details about the datasets are provided, including their descriptions, the planning decisions
-            made, and
-            insights into the methods and tools utilized during the compilation process.
-            But why this section is titled Capta instead of Data? To emphasize a key idea and concept that significantly
-            impacted
-            the work. This concept is commonly used in Digital Humanities, as defined by Johanna Drucker:
-            https://de.wikipedia.org/wiki/Johanna_Drucker
-            ""Capta is “taken” actively while data is assumed to be a “given” able to be recorded and observed. From
-            this
-            distinction, a world of differences arises. Humanistic inquiry acknowledges the situated, partial, and
-            constitutive
-            character of knowledge production, the recognition that knowledge is constructed, taken, not simply given as
-            a natural
-            representation of pre-existing fact. (Drucker, 2011)""
-            To visually show something, there is a need to turn it into numbers and tables. Think of it like
-            translating—it involves
-            making choices, but the analyses in this project are the result of a humanities-focused research, not just
-            applying a
-            statistical algorithm, but also they connect with processes of reading and interpreting.
+          <p>The gathered datasets, are the essential basis for creating the visual representations in the project.
+            <br />
+            In this section, the important details about the datasets are provided, including their descriptions, the
+            planning decisions
+            made, and insights into the methods and tools utilized during the compilation process.
+            <br />
+            But why this section is titled Capta instead of Data?
+            <br />
+            To emphasize a key idea and concept that significantly impacted the work.
+            <br />
+            This concept is commonly used in
+            Digital Humanities, as defined by <a href="https://en.wikipedia.org/wiki/Johanna_Drucker" target="_blank"
+              rel="noopener">Johanna Drucker</a>:
+          </p>
+          <br />
+          <br />
+          <q>Capta is “taken” actively while data is assumed to be a “given” able to be recorded and observed.
+            <br />
+            From
+            this distinction, a world of differences arises. Humanistic inquiry acknowledges the situated, partial,
+            and constitutive character of knowledge production, the recognition that knowledge is constructed, taken,
+            not
+            simply given as a natural representation of pre-existing fact.
+            <br />
+            (Drucker, 2011)
+          </q>
+          <br />
+          <br />
+          <p>To visually show something, there is a need to turn it into numbers and tables.
+            <br />
+            Think of it like translating—it involves making choices, but the analyses in this project are the result of
+            a humanities-focused research, not just
+            applying a statistical algorithm, but also they connect with processes of reading and interpreting.
             اینجا باید درباره دیتایی که آماده کردیم بگیم
             مثلا بگیم که متن هر دفتر شعر را بر اساس بیشترین کلمات استفاده شده تحلیل کردیم و بعد این کلمات را بر اساس
             مفهوم و تمی که
@@ -201,10 +212,8 @@
           <br />
           <br />
           <div class="chart" class="center">
-
-            <div id="map" style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;">
+            <div id="map" style="width: 1000px; height: 700px; display:block; margin-left: auto; margin-right: auto;">
             </div>
-
           </div>
         </div>
       </div>
@@ -215,7 +224,7 @@
         <div class="section-header section-header-negetive">
           &nbsp;
           &nbsp;
-          <h2>map2</h2>
+          <h2>Heat Map</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
             et
             dolore magna
@@ -230,7 +239,7 @@
           <br />
           <br />
           <br />
-          <div class="chart" class="center">
+          <div class="center">
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
               google.charts.load('current', {
@@ -239,7 +248,7 @@
               google.charts.setOnLoadCallback(drawRegionsMap);
               function drawRegionsMap() {
                 var data = google.visualization.arrayToDataTable([
-                  ['Country', 'painters'],
+                  ['Country', 'Translations'],
                   ['Afghanistan', 1],
                   ['Belgium', 1],
                   ['Denmark', 1],
@@ -264,109 +273,28 @@
                 ]);
                 var options = {
                   colorAxis: { colors: ['#c7dea0', '#556b2f'] },
-                  backgroundColor: '#F6F7FD'
+                  backgroundColor: '#ffff'
                 };
                 var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
                 chart.draw(data, options);
               }
             </script>
             <div id="regions_div"
-              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"></div>
-          </div>
-        </div>
-      </div>
-      <!-- ======= Word cloud graphs ======= -->
-      <div class="bo">
-      </div>
-      <div id="wo-cloud" class="container padding-top-50" data-aos="fade-up" id="er-model">
-        <div class="section-header section-header-negetive">
-          &nbsp;
-          &nbsp;
-          <h2>Word Cloud Graphs</h2>
-          <br />
-          <br />
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <br />
-          <br />
-          <br />
-          <div>
-            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-be8b61a71d58fafee94734cda0aa975d&whiteList=&visible=105&corpus=996512397025fddb053e7e8e9f7b4dd8'>
-            </iframe>
+              style="width: 1000px; height: 700px; display:block; margin-left: auto; margin-right: auto;">
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
           <br />
-          <br />
-          <br />
-          <div>
-            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-020b720e3ee536081a730eda993b5f5c&whiteList=&visible=115&corpus=07c750d6b0cb615aef564ceb6dbfa43c'>
-            </iframe>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div>
-            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-4cd8c89c8b43acecec9bdce1bcb4f5fd&whiteList=&visible=115&corpus=bb74f024dc90e8cee7f432209cdcf63f'>
-            </iframe>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div>
-            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-a8d9c1eaecbb92411bbdbedb5578786c&whiteList=&visible=105&corpus=e29448566b8afd98b5f4c74ae47bb39e'>
-            </iframe>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div>
-            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-9668b8b4721a9dae8691860e0a4a74d9&whiteList=&visible=105&corpus=8b8d61b23406390ced316a9b8ab8a6a5'>
-            </iframe>
-          </div>
-          <br />
-          <br />
-          <br />
-          <div>
-            <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-              src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-bfa6556f117f18e3b67719a52320353b&whiteList=&visible=105&corpus=35aaec5dcaaea4f6b86de1d6b1d97b72'>
-            </iframe>
-          </div>
           <br />
           <br />
           <br />
         </div>
       </div>
-      <!-- ======= plot2 ======= -->
-      <div class="bo">
-      </div>
-      <div id="plot2" class="container padding-top-50" data-aos="fade-up" id="metadata-analysis">
-        <div class="section-header section-header-negetive">
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          <h2>plot2</h2>
-          <p>The table below shows the <b>metadata standards</b> used by the institutions to describe the selected
-            items.
-            Some of them explicitly declared the standard(s) used for the data they manipulated, while for those
-            not
-            declared, the <em>common standards</em> most related to the element provided were chosen. All
-            standards
-            allowed to the main <a href="www.google.com" target="_blank" rel="noopener">subject</a>.
-          </p>
-        </div>
+
     </section>
     <!-- ======= Footer ======= -->
     <footer id="footer">

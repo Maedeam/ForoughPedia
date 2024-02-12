@@ -82,9 +82,9 @@ h6 {
   text-align: center;
   padding: 0;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  color: #9195a2;
+  color: #2b2e37;
 }
 
 .section-with-bg {
@@ -595,7 +595,7 @@ h6 {
 }
 
 #about p {
-  font-size: 17px;
+  font-size: 20px;
   margin-bottom: 20px;
   color: #fff;
 }
