@@ -192,7 +192,7 @@
             <br />
             <br />
             <img src="../../img/illustrations/undraw_pie_graph_re_fvol.svg" alt="Analysis"
-              style="max-width: 10%; height: auto;">
+              style="max-width: 15%; height: auto;">
             <br />
             <br />
             For the next analysis, we divide these words into three categories,
@@ -235,9 +235,12 @@
                   slices: {
                     0: { color: "#009b77", offset: 0.1 },
                     1: { color: "#7c93c2" },
-                    animation: { "startup": true }
                   },
-                  backgroundColor: '#F6F7FD'
+                  backgroundColor: '#F6F7FD',
+                  animation: {
+                    duration: 1000,
+                    easing: 'out',
+                  },
                 };
                 var chart = new google.visualization.PieChart(document.getElementById('Book1PieChart'));
                 chart.draw(data, options);
@@ -255,8 +258,10 @@
           <br />
           <br />
           <br />
-          <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
-            style="max-width: 10%; height: auto;">
+          <p>
+            <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
+              style="max-width: 15%; height: auto;">
+          </p>
           <br />
           <br />
           <br />
@@ -321,7 +326,7 @@
           <br />
           <br />
           <p>
-            </strong>Literary analysis:</strong>
+            <em><strong>Literary Analysis</strong></em>
             <br />
             Here are five main themes of the book:
             <br />
@@ -407,7 +412,7 @@
             <br />
             <br />
             <img src="../../img/illustrations/undraw_pie_graph_re_fvol.svg" alt="Analysis"
-              style="max-width: 10%; height: auto;">
+              style="max-width: 15%; height: auto;">
             <br />
             <br />
             Here are the words categorized into <em>positive orientation</em>, <em>negative orientation</em>, and
@@ -466,8 +471,10 @@
           <br />
           <br />
           <br />
-          <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
-            style="max-width: 10%; height: auto;">
+          <p>
+            <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
+              style="max-width: 15%; height: auto;">
+          </p>
           <br />
           <br />
           <br />
@@ -530,7 +537,7 @@
           <br />
           <br />
           <p>
-            Literary analysis:
+            <em><strong>Literary Analysis</strong></em>
             <br />
             Here are five main themes of the book:
             <br />
@@ -622,7 +629,7 @@
             <br />
             <br />
             <img src="../../img/illustrations/undraw_pie_graph_re_fvol.svg" alt="Analysis"
-              style="max-width: 10%; height: auto;">
+              style="max-width: 15%; height: auto;">
             <br />
             <br />
             Most frequent words in the corpus are categorized as bellow:
@@ -680,8 +687,10 @@
             <br />
             <br />
             <br />
-            <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
-              style="max-width: 10%; height: auto;">
+            <p>
+              <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
+                style="max-width: 15%; height: auto;">
+            </p>
             <br />
             <br />
             <br />
@@ -742,7 +751,7 @@
             </div>
             <br />
             <p>
-              Literary analysis:
+              <em><strong>Literary Analysis</strong></em>
               <br />
               Here are five main themes of the book:
               <br />
@@ -808,7 +817,7 @@
               <br />
               <br />
               <img src="../../img/illustrations/undraw_pie_graph_re_fvol.svg" alt="Analysis"
-                style="max-width: 10%; height: auto;">
+                style="max-width: 15%; height: auto;">
               <br />
               <br />
               Most frequent words in the corpus are categorized as bellow:
@@ -868,8 +877,10 @@
               <br />
               <br />
               <br />
-              <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
-                style="max-width: 10%; height: auto;">
+              <p>
+                <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
+                  style="max-width: 15%; height: auto;">
+              </p>
               <br />
               <br />
               <br />
@@ -931,7 +942,7 @@
               </div>
               <br />
               <p>
-                Literary analysis:
+                <em><strong>Literary Analysis</strong></em>
                 <br />
                 Based on the most frequently recurring words in the provided list, here are five main
                 themes of the
@@ -1007,7 +1018,7 @@
                 <br />
                 <br />
                 <img src="../../img/illustrations/undraw_pie_graph_re_fvol.svg" alt="Analysis"
-                  style="max-width: 10%; height: auto;">
+                  style="max-width: 15%; height: auto;">
                 <br />
                 <br />
               <p>
@@ -1066,8 +1077,10 @@
                 <br />
                 <br />
                 <br />
-                <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
-                  style="max-width: 10%; height: auto;">
+                <p>
+                  <img src="../../img/illustrations/undraw_investment_data_re_sh9x.svg" alt="Analysis"
+                    style="max-width: 15%; height: auto;">
+                </p>
                 <br />
                 <br />
                 <br />
@@ -1128,8 +1141,8 @@
                   class="center;">
                 </div>
                 <br />
-                <p><strong>Literary analysis: </strong></p>
                 <p>
+                  <em><strong>Literary Analysis</strong></em>
                   Here are five main themes of the book:
                   <br />
                   Nature and Garden: The repetition of words like "garden," "flower," "sun," "wind," and "season"
@@ -1198,71 +1211,80 @@
                 &nbsp;
                 &nbsp;
                 <h2>Conclusion</h2>
-                <p>After text analysis and extracting the most frequently used words in each book, a notable fact
-                  appeared
-                  that was not
-                  visible before.
+                <p>
                   <br />
-                  We calculated the percentage of positive and negative words in each of Forough's books and
-                  compared the
-                  ratio of positive to negative words to examine the poet's emotional and mental states over different
-                  periods of her life
-                  through the lens of data analysis.
                   <br />
-                  The interesting result of this statistical comparison was that the
-                  ratio of positive
-                  to negative words exactly correlates with the poet's emotional states in various stages of her life.
-                  <br />
-                  If we
-                  consider the
-                  Ballance Line in the chart below as the point of equilibrium between the poet's negative and
-                  positive
-                  mental states, we
-                  can consider periods where the ratio was below one as the darker periods of her life.
-                  <br />
-                  As it is evident,
-                  the poems she
-                  wrote in her first poetry collection "The Captive" exactly reflect her emotional states during the
-                  years
-                  of youthful
-                  love and romantic marriage.
-                  <br />
-                  In this book, the ratio of positive to negative words is 1.4. In her second
-                  book, published
-                  shortly after her divorce, that is, according to Farzaneh Milani, expressed her romantic feelings
-                  and
-                  heartaches with
-                  her ex-husband, the ratio of positive to negative words exactly reached 1.
-                  <br />
-                  This indicates that during the
-                  writing of
-                  this book, Forough had transformed from a cheerful girl to a balanced woman with a broader view on
-                  both
-                  the good and bad
-                  aspects of life, experiencing both exhilarating moments in her life and marital relationships and
-                  the
-                  challenges,
-                  humiliations, and regrets of a modern woman in a traditional society.
-                  <br />
-                  In her third book, "Rebellion,"
-                  published after
-                  her recovery trip to Europe for nerve and mental rejuvenation, dominantly containing the poems
-                  written
-                  during Forough’s
-                  dark days of life, her divorce, suicide, and long hospitalization, the ratio of positive to negative
-                  words
-                  dropped
-                  significantly below 1, a deficient number indicating her negative emotions and extreme despair.
-                  <br />
-                  During
-                  this period, as
-                  obtained from the word analysis, words like Cry, Hell, and Pain which were not prominent in
-                  Forough's
-                  earlier poems,
-                  were frequently used. Additionally, the word Darkness/Dark was used more than in all other Forough's
-                  works
-                  and is the
-                  most repeated word in this book.
+                <p>
+                  <img src="../../img/illustrations/undraw_inspection_re_tbt7.svg" alt="Analysis"
+                    style="max-width: 15%; height: auto;">
+                </p>
+                <br />
+                <br />
+                After text analysis and extracting the most frequently used words in each book, a notable fact
+                appeared
+                that was not
+                visible before.
+                <br />
+                We calculated the percentage of positive and negative words in each of Forough's books and
+                compared the
+                ratio of positive to negative words to examine the poet's emotional and mental states over different
+                periods of her life
+                through the lens of data analysis.
+                <br />
+                The interesting result of this statistical comparison was that the
+                ratio of positive
+                to negative words exactly correlates with the poet's emotional states in various stages of her life.
+                <br />
+                If we
+                consider the
+                Ballance Line in the chart below as the point of equilibrium between the poet's negative and
+                positive
+                mental states, we
+                can consider periods where the ratio was below one as the darker periods of her life.
+                <br />
+                As it is evident,
+                the poems she
+                wrote in her first poetry collection "The Captive" exactly reflect her emotional states during the
+                years
+                of youthful
+                love and romantic marriage.
+                <br />
+                In this book, the ratio of positive to negative words is 1.4. In her second
+                book, published
+                shortly after her divorce, that is, according to Farzaneh Milani, expressed her romantic feelings
+                and
+                heartaches with
+                her ex-husband, the ratio of positive to negative words exactly reached 1.
+                <br />
+                This indicates that during the
+                writing of
+                this book, Forough had transformed from a cheerful girl to a balanced woman with a broader view on
+                both
+                the good and bad
+                aspects of life, experiencing both exhilarating moments in her life and marital relationships and
+                the
+                challenges,
+                humiliations, and regrets of a modern woman in a traditional society.
+                <br />
+                In her third book, "Rebellion,"
+                published after
+                her recovery trip to Europe for nerve and mental rejuvenation, dominantly containing the poems
+                written
+                during Forough’s
+                dark days of life, her divorce, suicide, and long hospitalization, the ratio of positive to negative
+                words
+                dropped
+                significantly below 1, a deficient number indicating her negative emotions and extreme despair.
+                <br />
+                During
+                this period, as
+                obtained from the word analysis, words like Cry, Hell, and Pain which were not prominent in
+                Forough's
+                earlier poems,
+                were frequently used. Additionally, the word Darkness/Dark was used more than in all other Forough's
+                works
+                and is the
+                most repeated word in this book.
                 </p>
                 <!--===== Line Chart =====-->
                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
