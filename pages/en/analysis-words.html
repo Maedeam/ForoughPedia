@@ -121,16 +121,20 @@
           &nbsp;
           &nbsp;
           <p>In this section, we have a different look at Forough’s poems through the new lens of data visualization
-            using
-            statistical analysis of the main words used by the poet in each book. This type of data analysis could
-            provide us with
-            the mindset of the poet and brighten the transformative journey of the poet as an influential character in
-            forming the
-            literature of a nation. This method can be used by sociologists to make accurate determinations and better
-            analyses of
-            cultural transformations in different societies. For instance, using the data analysis of works of prominent
-            writers and
-            poets, sociologists can study the intellectual and cultural line of a society and even predict it’s future
+            <br />
+            using statistical analysis of the main words used by the poet in each book.
+            <br />
+            This type of data analysis could provide us with the mindset of the poet and
+            <br />
+            brighten the transformative journey of the poet as an influential character in forming the literature of a
+            nation.
+            <br />
+            This method can be used by sociologists to make accurate determinations and better analyses of cultural
+            transformations in different societies.
+            <br />
+            For instance, using the data analysis of works of prominent writers and poets,
+            <br />
+            sociologists can study the intellectual and cultural line of a society and even predict it’s future
             direction.
           </p>
         </div>
@@ -147,12 +151,17 @@
           <br />
           <br />
           <p>
-            In the first step, the total collections published by the poet are analyzed by Voyant. Based on the words
-            that have the
-            highest frequency, it can be inferred that the main General theme of Forough poems in all of her collections
-            is likely
-            related to her emotions, personal feelings, and relationships with people. However, as a new sight to
-            Forough’s journey,
+            In the first step, the total collections published by the poet are analyzed by Voyant.
+            <br />
+            Based on the words that have the highest frequency,
+            <br />
+            it can be inferred that the main General theme of Forough poems in all of her collections is likely related
+            to
+            <br />
+            her emotions, personal feelings, and relationships with people.
+            <br />
+            However, as a new sight to Forough’s journey,
+            <br />
             we analyze each of her books separately to better understand her literary orientation.
           </p>
           <br />
@@ -177,29 +186,30 @@
               <br />
               words with <em>positive orientation</em>, <em>negative orientation</em>, and <em>neutral words</em>:
               <br />
+              <br />
               <strong>Neutral words:</strong> <em>Total Number: 360</em>
               <br />
-              Containing: heart (102), eye (53), lip (49), gaze (39), know (26), star (21), moment (20), body (20), soul
+              heart (102), eye (53), lip (49), gaze (39), know (26), star (21), moment (20), body (20), soul
               (19)
               <br />
               <strong>Negative words:</strong> <em>Total Number: 159</em>
               <br />
-              Containing: night (59), silent (36), darkness (23), sorrow (21), secret (20)
+              night (59), silent (36), darkness (23), sorrow (21), secret (20)
               <br />
               <strong>Positive words:</strong> <em>Total Number: 222</em>
               <br />
-              Containing: love (62), kiss (37), embrace (29), desire (27), longing (26), hope (21)
+              love (62), kiss (37), embrace (29), desire (27), longing (26), hope (21)
             </p>
             <br />
             <br />
             <br />
-            <!-- ======= Pie Chart Book 1 ======= -->
+            <!-- ======= Book 1 Pie Chart Function ======= -->
             <div class="center">
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
               <script type="text/javascript">
                 google.charts.load("current", { packages: ["corechart"] });
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
+                google.charts.setOnLoadCallback(drawBook1PieChart);
+                function drawBook1PieChart() {
                   var data = google.visualization.arrayToDataTable([
                     ['Gender', 'Number'],
                     ['Neutral words', 360],
@@ -211,15 +221,16 @@
                     pieHole: 0.4,
                     slices: {
                       0: { color: "#009b77", offset: 0.1 },
-                      1: { color: "#7c93c2" }
+                      1: { color: "#7c93c2" },
                     },
-                    backgroundColor: '#ffff',
+                    backgroundColor: '#F6F7FD'
                   };
-                  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                  var chart = new google.visualization.PieChart(document.getElementById('Book1PieChart'));
                   chart.draw(data, options);
                 }
               </script>
-              <div id="donutchart"
+              <!-- ======= Book 1 Pie Chart Call ======= -->
+              <div id="Book1PieChart"
                 style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
                 class="center">
               </div>
@@ -235,37 +246,35 @@
             <br />
             <br />
             <br />
-            <!-- ======= Bar Chart Book 1 ======= -->
+            <!-- ======= Book 1 Bar Chart Function ======= -->
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
               google.charts.load("current", { packages: ['corechart'] });
-              google.charts.setOnLoadCallback(drawChart);
-              function drawChart() {
+              google.charts.setOnLoadCallback(drawBook1BarChart);
+              function drawBook1BarChart() {
                 var data = google.visualization.arrayToDataTable([
-                  ["Words", "Density", { role: "style" }],
-                  ["heart", 102, "#009b77"],
-                  ["love", 62, "009b77"],
-                  ["night", 59, "009b77"],
-                  ["eye", 53, "#009b77"],
-                  ["lip", 49, "#009b77"],
-                  ["gaze", 39, "#009b77"],
-                  ["kiss", 37, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["embrace", 29, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
-                  ["silent", 36, "#009b77"],
+                  ["Words", "Iteration", { role: "style" }],
+                  ["sound", 23, "#009b77"],
+                  ["garden", 20, "#009b77"],
+                  ["time", 19, "#009b77"],
+                  ["window", 16, "#009b77"],
+                  ["night", 15, "#009b77"],
+                  ["love", 13, "#009b77"],
+                  ["cold", 12, "#009b77"],
+                  ["mother", 12, "#009b77"],
+                  ["heart", 11, "#009b77"],
+                  ["flower", 11, "#009b77"],
+                  ["sun", 11, "#009b77"],
+                  ["day", 10, "#009b77"],
+                  ["hand", 10, "#009b77"],
+                  ["wind", 9, "#009b77"],
+                  ["look", 9, "#009b77"],
+                  ["begining", 9, "#009b77"],
+                  ["stop", 8, "#009b77"],
+                  ["season", 8, "#009b77"],
+                  ["moment", 8, "#009b77"],
+                  ["lost", 8, "#009b77"]
                 ]);
-
                 var view = new google.visualization.DataView(data);
                 view.setColumns([0, 1,
                   {
@@ -275,20 +284,22 @@
                     role: "annotation",
                   },
                   2]);
-
                 var options = {
-                  title: "Density of Precious Metals, in g/cm^3",
-                  width: 600,
-                  height: 400,
-                  bar: { groupWidth: "95%" },
+                  title: "Orientation Words",
+                  width: 1300,
+                  height: 600,
+                  bar: { groupWidth: "75%" },
                   legend: { position: "none" },
+                  backgroundColor: "#F6F7FD",
+                  axisTitlesPosition: 'out'
                 };
-                var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+                var chart = new google.visualization.ColumnChart(document.getElementById("Book1BarChart"));
                 chart.draw(view, options);
               }
             </script>
-            <div id="columnchart_values"
-              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+            <!-- ======= Book 1 Bar Chart Call ======= -->
+            <div id="Book1BarChart"
+              style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;"
               class="center;">
             </div>
             <br />
@@ -297,36 +308,61 @@
             <br />
             <br />
             <p>
-              Literary analysis:
-              here are five main themes of the book:
-              Emotions and Relationships: Words like "heart," "love," "sorrow," "desire," "longing," and "embrace"
-              suggest a focus on
-              emotions and relationships. This theme may explore the complexities of love, longing, sorrow, desire, and
-              the deep
-              connections between individuals.
-              Introspection and Existentialism: The presence of words such as "soul," "know," "silent," "darkness," and
-              "secret"
-              indicates themes related to introspection and existentialism. This motif could delve into questions of
-              identity, inner
+              </strong>Literary analysis:</strong>
+              <br />
+              Here are five main themes of the book:
+              <br />
+              Emotions and Relationships:
+              <br />
+              Words like "heart," "love," "sorrow," "desire," "longing," and "embrace" suggest a focus on emotions and
+              relationships.
+              <br />
+              This theme may explore the complexities of love, longing, sorrow, desire, and the deep connections between
+              individuals.
+              <br />
+              Introspection and Existentialism:
+              <br />
+              The presence of words such as "soul," "know," "silent," "darkness," and "secret"
+              indicates themes related to introspection and existentialism.
+              <br />
+              This motif could delve into questions of identity, inner
               struggles, personal revelations, and the search for meaning in life.
-              Nature and Symbolism: Terms like "star," "night," "moment," and "hope" imply themes of nature and
-              symbolism. This theme
+              <br />
+              Nature and Symbolism:
+              <br />
+              Terms like "star," "night," "moment," and "hope" imply themes of nature and
+              symbolism.
+              <br />
+              This theme
               may involve reflections on the beauty and transience of life, as well as the symbolism associated with
               natural elements
               like stars and the night sky.
-              Communication and Connection: The inclusion of words like "eye," "gaze," "lip," "kiss," and "body"
+              <br />
+              Communication and Connection:
+              <br />
+              The inclusion of words like "eye," "gaze," "lip," "kiss," and "body"
               suggests themes
-              related to communication and connection. This motif may explore the power of nonverbal communication,
+              related to communication and connection.
+              <br />
+              This motif may explore the power of nonverbal communication,
               physical intimacy,
               and the significance of human touch in forming connections.
-              Yearning and Aspiration: The presence of words such as "hope," "desire," "longing," and "embrace" points
+              <br />
+              Yearning and Aspiration:
+              <br />
+              The presence of words such as "hope," "desire," "longing," and "embrace" points
               to themes of
-              yearning and aspiration. This theme may involve the exploration of dreams, aspirations, and the pursuit of
+              yearning and aspiration.
+              <br />
+              This theme may involve the exploration of dreams, aspirations, and the pursuit of
               a better
               future, as well as the emotional journey associated with striving for one's goals.
+              <br />
               These themes offer insight into the overarching motifs and subjects explored within the book, reflecting
               its potential
               focus on the complexities of human experience, relationships, and existential inquiries.
+              <br />
+              <br />
               Based on the density of negative and positive categories we could conclude that “The Captive” which is
               written in the
               first stage of the poet's life possesses mostly a positive theme reflecting her hopefulness and positive
@@ -369,17 +405,17 @@
               <strong>Positive words:</strong> <em>Total Number: 98</em>
               <br />
               Containing: love(22), sun(19), dream(17), longing(15), desire(13), kiss(12)
-            </p>>
+            </p>
             <br />
             <br />
             <br />
-            <!-- ======= Pie Chart Book 2 ======= -->
+            <!-- ======= Book 2 Pie Chart Function ======= -->
             <div class="center">
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
               <script type="text/javascript">
                 google.charts.load("current", { packages: ["corechart"] });
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
+                google.charts.setOnLoadCallback(drawBook2PieChart);
+                function drawBook2PieChart() {
                   var data = google.visualization.arrayToDataTable([
                     ['Gender', 'Number'],
                     ['Neutral words', 196],
@@ -393,13 +429,14 @@
                       0: { color: "#009b77", offset: 0.1 },
                       1: { color: "#7c93c2" }
                     },
-                    backgroundColor: '#ffff',
+                    backgroundColor: '#F6F7FD',
                   };
-                  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                  var chart = new google.visualization.PieChart(document.getElementById('Book2PieChart'));
                   chart.draw(data, options);
                 }
               </script>
-              <div id="donutchart"
+              <!-- ======= Book 1 Pie Chart Call ======= -->
+              <div id="Book2PieChart"
                 style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
                 class="center">
               </div>
@@ -438,7 +475,6 @@
                     role: "annotation"
                   },
                   2]);
-
                 var options = {
                   title: "Density of Precious Metals, in g/cm^3",
                   width: 600,
@@ -451,42 +487,64 @@
               }
             </script>
             <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
-
             <br />
             <br />
             <br />
             <p>
-              Literary analysis: Here are five main themes of the book:
-              Inner and External Perception: Words like "eye," "heart," "soul," and "gaze" suggest a focus on
+              Literary analysis:
+              <br />
+              Here are five main themes of the book:
+              <br />
+              Inner and External Perception:<br />
+              Words like "eye," "heart," "soul," and "gaze" suggest a focus on
               perception,
               both
-              internal and external. This theme may explore how individuals perceive themselves, others, and the world
+              internal and external.
+              <br />
+              This theme may explore how individuals perceive themselves, others, and the world
               around them, as
               well as the depth of their emotions and desires.
-              Love and Longing: The presence of words like "love," "longing," "desire," "kiss," and "sorrow" indicates
+              <br />
+              Love and Longing:
+              <br />
+              The presence of words like "love," "longing," "desire," "kiss," and "sorrow" indicates
               themes centered
-              around love, emotional connections, and yearning. This theme may delve into various aspects of romantic
+              around love, emotional connections, and yearning.
+              <br />
+              This theme may delve into various aspects of romantic
               relationships,
               including passion, loss, and the complexities of desire.
+              <br />
               Night and Darkness: Words such as "night," "shadow," "darkness," and "silent" suggest themes related to
               darkness and the
-              night. This motif could symbolize various concepts, including mystery, solitude, introspection, and the
+              night.
+              <br />
+              This motif could symbolize various concepts, including mystery, solitude, introspection, and the
               unknown.
+              <br />
               Journey and Exploration: Terms like "path," "dream," "sky," and "breeze" imply themes of journey and
               exploration, both
-              physical and metaphorical. This theme may involve quests for self-discovery, spiritual enlightenment, or
+              physical and metaphorical.
+              <br />
+              This theme may involve quests for self-discovery, spiritual enlightenment, or
               the
               pursuit of
               dreams and aspirations.
-              Body and Sensuality: The presence of words like "lip," "body," "sensuality," and "kiss" suggests themes
+              <br />
+              Body and Sensuality:<br />
+              The presence of words like "lip," "body," "sensuality," and "kiss" suggests themes
               related to
-              physicality and sensuality. This motif may explore the connections between the body and the self, as well
+              physicality and sensuality.
+              <br />
+              This motif may explore the connections between the body and the self, as well
               as
               the
               experiences of pleasure, intimacy, and desire.
+              <br />
               These themes provide insight into the overarching motifs and subjects explored within the book, reflecting
               its potential
               focus on the complexities of human emotions, relationships, and existential journeys.
+              <br />
               This analysis can reveal a new interpretation that may not have been discernible before. As it’s obvious
               from word
               analysis, the count of negative and positive words are exactly the same. We know that “The Wall” poems
@@ -495,7 +553,9 @@
               during the last years of marriage of Forough when she was grappling with the problems of a housebound
               woman
               trapped in
-              the bonds of marriage in the traditional society of that time while still loving her husband. This
+              the bonds of marriage in the traditional society of that time while still loving her husband.
+              <br />
+              This
               struggling situation
               caused the passion, eagerness, and freshness of a young girl to fade. Though a mixture of hope and
               frustration existed
@@ -536,18 +596,17 @@
               <strong>Positive words:</strong> <em>Total Number: 48</em>
               <br />
               Containing: love(24), hand(24)
-            </p>>
+            </p>
             <br />
             <br />
             <br />
-            <!-- ======= Pie Chart Book 3 ======= -->
-
+            <!-- ======= Book 3 Pie Chart Function ======= -->
             <div class="center">
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
               <script type="text/javascript">
                 google.charts.load("current", { packages: ["corechart"] });
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
+                google.charts.setOnLoadCallback(drawBook3PieChart);
+                function drawBook3PieChart() {
                   var data = google.visualization.arrayToDataTable([
                     ['Gender', 'Number'],
                     ['Neutral words', 259],
@@ -561,406 +620,504 @@
                       0: { color: "#009b77", offset: 0.1 },
                       1: { color: "#7c93c2" }
                     },
-                    backgroundColor: '#ffff',
+                    backgroundColor: '#F6F7FD',
                   };
-                  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                  var chart = new google.visualization.PieChart(document.getElementById('Book3PieChart'));
                   chart.draw(data, options);
                 }
               </script>
-              <div id="donutchart"
+              <!-- ======= Book 3 Pie Chart Call ======= -->
+              <div id="Book3PieChart"
                 style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
                 class="center">
               </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-              Literary analysis: Here are five main themes of the book:
-              Darkness and Night: Represented by words like "dark," "night," "darkness," and "cold," these themes
-              suggest
-              a prevalent
-              motif of darkness, symbolizing various aspects such as despair, mystery, or the unknown.
-              Inner and External Perception: Words like "eye," "face," and "heart" indicate a focus on perception, both
-              internal and
-              external. This theme may explore how individuals perceive themselves, others, and the world around them.
-              Existential and Spiritual Exploration: Terms like "existence," "god," and "hell" suggest themes related to
-              existentialism and spiritual exploration. This could involve questioning the meaning of life, grappling
-              with
-              religious
-              or philosophical beliefs, or confronting existential crises.
-              Love and Relationships: The presence of words like "love," "hand," and "heart" suggests themes centered
-              around love,
-              relationships, and emotional connections. This theme may delve into various aspects of human
-              relationships,
-              including
-              love, loss, longing, and intimacy.
-              Suffering and Pain: Words such as "pain," "silent," "cry," and "chest" indicate themes related to
-              suffering
-              and
-              emotional turmoil. This theme may explore the experiences of pain, grief, and hardship, as well as the
-              internal
-              struggles faced by individuals.
-              These themes provide a glimpse into the overarching motifs and subjects explored within the book,
-              reflecting
-              its
-              potential focus on existential, emotional, and spiritual aspects of the human experience.
-            </p>
-            <br />
-            <br />
-            <br />
-            <h2>Book 4, 'Another Birth" word-cloud</h2>
-            <br />
-            <br />
-            <br />
-            <!-- ======= word cloud 4
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>
+                Literary analysis:
+                <br />
+                Here are five main themes of the book:
+                <br />
+                Darkness and Night: Represented by words like "dark," "night," "darkness," and "cold," these themes
+                suggest
+                a prevalent
+                motif of darkness, symbolizing various aspects such as despair, mystery, or the unknown.
+                <br />
+                Inner and External Perception:
+                <br />
+                Words like "eye," "face," and "heart" indicate a focus on perception, both
+                internal and
+                external. This theme may explore how individuals perceive themselves, others, and the world around them.
+                Existential and Spiritual Exploration: Terms like "existence," "god," and "hell" suggest themes related
+                to
+                existentialism and spiritual exploration. This could involve questioning the meaning of life, grappling
+                with
+                religious
+                or philosophical beliefs, or confronting existential crises.
+                <br />
+                Love and Relationships:
+                <br />
+                The presence of words like "love," "hand," and "heart" suggests themes centered
+                around love,
+                relationships, and emotional connections. This theme may delve into various aspects of human
+                relationships,
+                including
+                love, loss, longing, and intimacy.
+                <br />
+                Suffering and Pain:
+                <br />
+                Words such as "pain," "silent," "cry," and "chest" indicate themes related to
+                suffering
+                and
+                emotional turmoil. This theme may explore the experiences of pain, grief, and hardship, as well as the
+                internal
+                struggles faced by individuals.
+                <br />
+                <br />
+                These themes provide a glimpse into the overarching motifs and subjects explored within the book,
+                reflecting
+                its
+                potential focus on existential, emotional, and spiritual aspects of the human experience.
+              </p>
+              <br />
+              <br />
+              <br />
+              <h2>Book 4, 'Another Birth" word-cloud</h2>
+              <br />
+              <br />
+              <br />
+              <!-- ======= word cloud 4
 
           <div>
             <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
               src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-ffb95fced11637e28a26c575ed8954ee&whiteList=&visible=105&corpus=f508e4b846facce3b975de1108e9dd6c'>
             </iframe>
           </div>======= -->
-            <br />
-            <br />
-            <br />
-            <p>
-              Most frequent words in the corpus are categorized as bellow:
               <br />
-              <strong>Neutral words:</strong> <em>Total Number: 379</em>
               <br />
-              Containing: water(40), heart(34), eye(31), hand(29), star(29), window(24), fish(23), body(23), scent(21),
-              moon(21),
-              wind(20), seventy(20), moment(20), day(34)
               <br />
-              <strong>Negative words:</strong> <em>Total Number: 89</em>
+              <p>
+                Most frequent words in the corpus are categorized as bellow:
+                <br />
+                <strong>Neutral words:</strong> <em>Total Number: 379</em>
+                <br />
+                Containing: water(40), heart(34), eye(31), hand(29), star(29), window(24), fish(23), body(23),
+                scent(21),
+                moon(21),
+                wind(20), seventy(20), moment(20), day(34)
+                <br />
+                <strong>Negative words:</strong> <em>Total Number: 89</em>
+                <br />
+                Containing: darkness(24), night(65)
+                <strong>Positive words:</strong> <em>Total Number: 104</em>
+                <br />
+                Containing: love(34), life(26), light(23), flower(21)
+              </p>
               <br />
-              Containing: darkness(24), night(65)
-              <strong>Positive words:</strong> <em>Total Number: 104</em>
               <br />
-              Containing: love(34), life(26), light(23), flower(21)
-            </p>>
-            <br />
-            <br />
-            <br />
-            <div class="center">
-              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-              <script type="text/javascript">
-                google.charts.load("current", { packages: ["corechart"] });
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
-                  var data = google.visualization.arrayToDataTable([
-                    ['Gender', 'Number'],
-                    ['Neutral words', 379],
-                    ['Negative words', 89],
-                    ['Positive words', 104]
-                  ]);
-                  var options = {
-                    title: 'Orientation Distribution',
-                    pieHole: 0.4,
-                    slices: {
-                      0: { color: "#009b77", offset: 0.1 },
-                      1: { color: "#7c93c2" }
-                    },
-                    backgroundColor: '#ffff',
-                  };
-                  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-                  chart.draw(data, options);
-                }
-              </script>
-              <div id="donutchart"
-                style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-                class="center">
-              </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-              Literary analysis: Based on the most frequently recurring words in the provided list, here are five main
-              themes of the
-              book:
-              Night and Darkness: The prominence of words like "night," "darkness," "star," "moon," and "window"
-              suggests
-              a theme
-              centered around nighttime and darkness. This motif may explore the mysteries, solitude, and introspection
-              associated
-              with the night, as well as the symbolism of darkness in literature.
-              Love and Relationships: The inclusion of words such as "love," "heart," "hand," "life," "body," and
-              "scent"
-              indicates
-              themes related to love and relationships. This theme may involve the exploration of romantic
-              relationships,
-              emotional
-              connections, and the experiences of love and longing.
-              Nature and Symbolism: Terms like "water," "fish," "flower," and "wind" imply themes of nature and
-              symbolism.
-              This motif
-              may involve reflections on the beauty and symbolism of the natural world, as well as the
-              interconnectedness
-              of humans
-              with their environment.
-              Time and Transience: The presence of words like "day," "seventy," and "moment" suggests themes related to
-              time and
-              transience. This theme may explore the passage of time, the fleeting nature of moments, and the
-              inevitability of change
-              and impermanence.
-              Light and Hope: The inclusion of words such as "light," "life," and "hope" points to themes of light and
-              hope. This
-              motif may involve reflections on illumination, optimism, and the pursuit of brighter futures, as well as
-              the
-              symbolic
-              significance of light as a source of guidance and inspiration.
+              <br />
+              <!-- ======= Book 4 Pie Chart Function ======= -->
+              <div class="center">
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load("current", { packages: ["corechart"] });
+                  google.charts.setOnLoadCallback(drawBook4PieChart);
+                  function drawBook4PieChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Gender', 'Number'],
+                      ['Neutral words', 379],
+                      ['Negative words', 89],
+                      ['Positive words', 104]
+                    ]);
+                    var options = {
+                      title: 'Orientation Distribution',
+                      pieHole: 0.4,
+                      slices: {
+                        0: { color: "#009b77", offset: 0.1 },
+                        1: { color: "#7c93c2" }
+                      },
+                      backgroundColor: '#F6F7FD',
+                    };
+                    var chart = new google.visualization.PieChart(document.getElementById('Book4PieChart'));
+                    chart.draw(data, options);
+                  }
+                </script>
+                <!-- ======= Book 4 Pie Chart Call ======= -->
+                <div id="Book4PieChart"
+                  style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+                  class="center">
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  Literary analysis:
+                  <br />
+                  Based on the most frequently recurring words in the provided list, here are five main
+                  themes of the
+                  book:
+                  <br />
+                  Night and Darkness: The prominence of words like "night," "darkness," "star," "moon," and "window"
+                  suggests
+                  a theme
+                  centered around nighttime and darkness. This motif may explore the mysteries, solitude, and
+                  introspection
+                  associated
+                  with the night, as well as the symbolism of darkness in literature.
+                  <br />
+                  Love and Relationships: The inclusion of words such as "love," "heart," "hand," "life," "body," and
+                  "scent"
+                  indicates
+                  themes related to love and relationships. This theme may involve the exploration of romantic
+                  relationships,
+                  emotional
+                  connections, and the experiences of love and longing.
+                  <br />
+                  Nature and Symbolism: Terms like "water," "fish," "flower," and "wind" imply themes of nature and
+                  symbolism.
+                  <br />
+                  This motif
+                  may involve reflections on the beauty and symbolism of the natural world, as well as the
+                  interconnectedness
+                  of humans
+                  with their environment.
+                  <br />
+                  Time and Transience: The presence of words like "day," "seventy," and "moment" suggests themes related
+                  to
+                  time and
+                  transience. This theme may explore the passage of time, the fleeting nature of moments, and the
+                  inevitability of change
+                  and impermanence.
+                  <br />
+                  Light and Hope: The inclusion of words such as "light," "life," and "hope" points to themes of light
+                  and
+                  hope. This
+                  motif may involve reflections on illumination, optimism, and the pursuit of brighter futures, as well
+                  as
+                  the
+                  symbolic
+                  significance of light as a source of guidance and inspiration.
+                  <br />
+                  <br />
+                  These themes offer insight into the overarching motifs and subjects explored within the book,
+                  reflecting
+                  its
+                  potential
+                  focus on the complexities of human experience, relationships, nature, and the passage of time.
 
-              These themes offer insight into the overarching motifs and subjects explored within the book, reflecting
-              its
-              potential
-              focus on the complexities of human experience, relationships, nature, and the passage of time.
-
-            </p>
-            <br />
-            <br />
-            <br />
-            <h2>Book 5, 'Let's Believe in …' word-cloud</h2>
-            <br />
-            <br />
-            <br />
-            <!-- ======= word cloud 5 
+                </p>
+                <br />
+                <br />
+                <br />
+                <h2>Book 5, 'Let's Believe in …' word-cloud</h2>
+                <br />
+                <br />
+                <br />
+                <!-- ======= word cloud 5 
 
           <div>
             <iframe style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
               src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-3282bf8c3b8de228093cfaa41751dc5f&whiteList=&visible=105&corpus=adef33c5a0f0662a7d7fc3411ed2c261'>
             </iframe>
           </div>======= -->
-            <br />
-            <br />
-            <br />
-            <p>
-              Most frequent words in the corpus are categorized as bellow:
-              <br />
-              <strong>Neutral words:</strong> <em>Total Number: 115</em>
-              <br />
-              Containing: sound(23), time(19), heart(11), hand(10), wind(9), look(9), stop(8), moment(8), season(8),
-              day(10)
-              <br />
-              <strong>Negative words:</strong> <em>Total Number: 35</em>
-              <br />
-              Containing: night(15), cold(12), lost(8)
-              <strong>Positive words:</strong> <em>Total Number: 92</em>
-              <br />
-              Containing: love(13), flower(11), sun(11), beginning(9), garden(20), window(16), mother(12)
-            </p>><br />
-            <br />
-            <br />
-            <div class="center">
-              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-              <script type="text/javascript">
-                google.charts.load("current", { packages: ["corechart"] });
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
-                  var data = google.visualization.arrayToDataTable([
-                    ['Gender', 'Number'],
-                    ['Neutral words', 115],
-                    ['Negative words', 35],
-                    ['Positive words', 92]
-                  ]);
-                  var options = {
-                    title: 'Orientation Distribution ',
-                    pieHole: 0.4,
-                    slices: {
-                      0: { color: "#009b77", offset: 0.1 },
-                      1: { color: "#7c93c2" }
-                    },
-                    backgroundColor: '#ffff',
-                  };
-                  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-                  chart.draw(data, options);
-                }
-              </script>
-              <div id="donutchart"
-                style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
-                class="center">
-              </div>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  Most frequent words in the corpus are categorized as bellow:
+                  <br />
+                  <strong>Neutral words:</strong> <em>Total Number: 115</em>
+                  <br />
+                  Containing: sound(23), time(19), heart(11), hand(10), wind(9), look(9), stop(8), moment(8), season(8),
+                  day(10)
+                  <br />
+                  <strong>Negative words:</strong> <em>Total Number: 35</em>
+                  <br />
+                  Containing: night(15), cold(12), lost(8)
+                  <strong>Positive words:</strong> <em>Total Number: 92</em>
+                  <br />
+                  Containing: love(13), flower(11), sun(11), beginning(9), garden(20), window(16), mother(12)
+                </p>
+                <br />
+                <br />
+                <br />
+                <!-- ======= Book 5 Pie Chart Function ======= -->
+                <div class="center">
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  <script type="text/javascript">
+                    google.charts.load("current", { packages: ["corechart"] });
+                    google.charts.setOnLoadCallback(drawBook5PieChart);
+                    function drawBook5PieChart() {
+                      var data = google.visualization.arrayToDataTable([
+                        ['Gender', 'Number'],
+                        ['Neutral words', 115],
+                        ['Negative words', 35],
+                        ['Positive words', 92]
+                      ]);
+                      var options = {
+                        title: 'Orientation Distribution',
+                        pieHole: 0.4,
+                        slices: {
+                          0: { color: "#009b77", offset: 0.1 },
+                          1: { color: "#7c93c2" }
+                        },
+                        backgroundColor: '#F6F7FD',
+                      };
+                      var chart = new google.visualization.PieChart(document.getElementById('Book5PieChart'));
+                      chart.draw(data, options);
+                    }
+                  </script>
+                  <!-- ======= Book 5 Pie Chart Call ======= -->
+                  <div id="Book5PieChart"
+                    style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+                    class="center">
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
 
-            <p><strong>Literary analysis: </strong></p>
-            <p>
-              Here are five main themes of the book:
-              Nature and Garden: The repetition of words like "garden," "flower," "sun," "wind," and "season" suggests
-              themes related
-              to nature and the environment. This motif may involve reflections on the beauty of the natural world,
-              growth, change,
-              and the passage of seasons.
-              Time and Transience: The inclusion of words such as "time," "day," "night," "moment," and "beginning"
-              indicates themes
-              associated with time and its passage. This theme may explore the fleeting nature of moments, the cyclical
-              nature of
-              time, and reflections on beginnings and endings.
-              Love and Relationships: Terms like "love," "heart," "mother," and "hand" imply themes related to love and
-              relationships.
-              This motif may involve explorations of familial bonds, maternal love, emotional connections, and the
-              complexities of
-              human relationships.
-              Sensory Experience: The presence of words like "sound," "window," "cold," "look," and "lost" suggests
-              themes
-              related to
-              sensory experiences and perception. This theme may involve reflections on sights, sounds, sensations, and
-              the impact of
-              sensory stimuli on human emotions and experiences.
-              Journey and Exploration: The repetition of words such as "stop," "moment," and "lost" hints at themes of
-              journey and
-              exploration. This motif may involve narratives of personal growth, self-discovery, and the quest for
-              meaning
-              or purpose.
-              These themes offer insight into the overarching motifs and subjects explored within the book, reflecting
-              its
-              potential
-              focus on nature, time, relationships, sensory experiences, and personal journeys.
-            </p>
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
-        <!-- ======= Result ======= -->
-        <div class="bo">
-        </div>
-        <div id="plot2" class="container padding-top-50" data-aos="fade-up" id="metadata-analysis">
-          <div class="section-header section-header-negetive">
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            <h2>Conclusion</h2>
-            <p>After text analysis and extracting the most frequently used words in each book, a notable fact appeared
-              that was not
-              visible before. We calculated the percentage of positive and negative words in each of Forough's books and
-              compared the
-              ratio of positive to negative words to examine the poet's emotional and mental states over different
-              periods of her life
-              through the lens of data analysis. The interesting result of this statistical comparison was that the
-              ratio of positive
-              to negative words exactly correlates with the poet's emotional states in various stages of her life. If we
-              consider the
-              Ballance Line in the chart below as the point of equilibrium between the poet's negative and positive
-              mental states, we
-              can consider periods where the ratio was below one as the darker periods of her life. As it is evident,
-              the poems she
-              wrote in her first poetry collection "The Captive" exactly reflect her emotional states during the years
-              of youthful
-              love and romantic marriage. In this book, the ratio of positive to negative words is 1.4. In her second
-              book, published
-              shortly after her divorce, that is, according to Farzaneh Milani, expressed her romantic feelings and
-              heartaches with
-              her ex-husband, the ratio of positive to negative words exactly reached 1. This indicates that during the
-              writing of
-              this book, Forough had transformed from a cheerful girl to a balanced woman with a broader view on both
-              the good and bad
-              aspects of life, experiencing both exhilarating moments in her life and marital relationships and the
-              challenges,
-              humiliations, and regrets of a modern woman in a traditional society. In her third book, "Rebellion,"
-              published after
-              her recovery trip to Europe for nerve and mental rejuvenation, dominantly containing the poems written
-              during Forough’s
-              dark days of life, her divorce, suicide, and long hospitalization, the ratio of positive to negative words
-              dropped
-              significantly below 1, a deficient number indicating her negative emotions and extreme despair. During
-              this period, as
-              obtained from the word analysis, words like Cry, Hell, and Pain which were not prominent in Forough's
-              earlier poems,
-              were frequently used. Additionally, the word Darkness/Dark was used more than in all other Forough's works
-              and is the
-              most repeated word in this book.
-            </p>
-            <!--===== Line Chart =====-->
-            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-            <script type="text/javascript">
-              google.charts.load('current', { 'packages': ['corechart'] });
-              google.charts.setOnLoadCallback(drawChart);
-              function drawChart() {
-                var data = google.visualization.arrayToDataTable([
-                  ['Book', 'Percentage of Positive Words / Negative Words', 'Balance Line'],
-                  ['Book 1', 1.4, 1],
-                  ['Book 2', 1.0, 1],
-                  ['Book 3', 0.3, 1],
-                  ['Book 4', 1.6, 1],
-                  ['Book 5', 2.9, 1]
-                ]);
-                var options = {
-                  title: '',
-                  curveType: 'function',
-                  legend: { position: 'bottom' }
-                };
-                var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-                chart.draw(data, options);
-              }
-            </script>
-            <div id="curve_chart"
-              style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center">
-            </div><br />
-            <br />
-            <br />
-            <p>
-              Furthermore, Forugh felt immense shame and guilt due to separation from her beloved husband, the distance
-              from her young
-              son, and her brief relationship with another man, whom she referred to as the major mistake of her life.
-              So, words such
-              as hell, God, and pain emerged for the first time in her poetry and were repeated significantly in her
-              third book
-              "Rebellion".
-              Her fourth book, "Another Birth," published long after her first three collections, significantly reflects
-              an
-              improvement in her mental state and a resurgence of hope within her. This book was written after Forugh's
-              inner journey
-              and numerous travels, as well as the profound effects of her courageous interactions with society. The
-              ratio of positive
-              to negative words in this book is a meaningful 1.2, indicating Forugh's upward movement towards finding
-              contentment in
-              life despite her realism.
-              Her final poetry collection, published posthumously, contains poems composed in the last four years of her
-              short life.
-              These were years of brilliance, marked by her consecutive international successes and her profound
-              personal and romantic
-              relationship with Ibrahim Golestan, which played a significant role in shaping Forugh's exceptional
-              personality. In this
-              collection, the percentage of positive to negative words astonishingly exceeds 2.5, indicating the
-              predominance of
-              positive emotions and mental states in the poet.
-              This meaningful corelation between her life and the words she used in her poems is mainly because of
-              Forough’s unmasked
-              authenticity that distinct her from other poets. While many poets may present verses that differ from
-              their everyday
-              lives and even produce beautiful poems, upon scrutinizing the life and conduct of the poet, one may
-              discern that the
-              poetry serves as a mere facade, diverging from the essence of the poet. Yet, the fabric of Forough's
-              poetry embodies her
-              genuine beliefs and convictions! Forough Farrokhzad's poetry narrates the tale of her life and her
-              beliefs, a
-              captivating narrative filled with turbulence, defiance, and undoubtedly, love.
-            </p>
-            <br />
-            <br />
-            <br />
-            <br />
-          </div>
+                  <p><strong>Literary analysis: </strong></p>
+                  <p>
+                    Here are five main themes of the book:
+                    <br />
+                    Nature and Garden: The repetition of words like "garden," "flower," "sun," "wind," and "season"
+                    suggests
+                    themes related
+                    to nature and the environment. This motif may involve reflections on the beauty of the natural
+                    world,
+                    growth, change,
+                    and the passage of seasons.
+                    <br />
+                    Time and Transience: The inclusion of words such as "time," "day," "night," "moment," and
+                    "beginning"
+                    indicates themes
+                    associated with time and its passage. This theme may explore the fleeting nature of moments, the
+                    cyclical
+                    nature of
+                    time, and reflections on beginnings and endings.
+                    <br />
+                    Love and Relationships:<br />
+                    Terms like "love," "heart," "mother," and "hand" imply themes related to love and
+                    relationships.
+                    <br />
+                    This motif may involve explorations of familial bonds, maternal love, emotional connections, and the
+                    complexities of
+                    human relationships.
+                    <br />
+                    Sensory Experience:<br />
+                    The presence of words like "sound," "window," "cold," "look," and "lost" suggests
+                    themes
+                    related to
+                    sensory experiences and perception.
+                    <br />
+                    This theme may involve reflections on sights, sounds, sensations, and
+                    the impact of
+                    sensory stimuli on human emotions and experiences.
+                    <br />
+                    Journey and Exploration:
+                    <br />
+                    The repetition of words such as "stop," "moment," and "lost" hints at themes of
+                    journey and
+                    exploration.
+                    <br />
+                    This motif may involve narratives of personal growth, self-discovery, and the quest for
+                    meaning
+                    or purpose.
+                    <br />
+                    <br />
+                    These themes offer insight into the overarching motifs and subjects explored within the book,
+                    reflecting
+                    its
+                    potential
+                    focus on nature, time, relationships, sensory experiences, and personal journeys.
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                </div>
+              </div>
+              <!-- ======= Result ======= -->
+              <div class="bo">
+              </div>
+              <div id="plot2" class="container padding-top-50" data-aos="fade-up" id="metadata-analysis">
+                <div class="section-header section-header-negetive">
+                  &nbsp;
+                  &nbsp;
+                  &nbsp;
+                  &nbsp;
+                  <h2>Conclusion</h2>
+                  <p>After text analysis and extracting the most frequently used words in each book, a notable fact
+                    appeared
+                    that was not
+                    visible before.
+                    <br />
+                    We calculated the percentage of positive and negative words in each of Forough's books and
+                    compared the
+                    ratio of positive to negative words to examine the poet's emotional and mental states over different
+                    periods of her life
+                    through the lens of data analysis.
+                    <br />
+                    The interesting result of this statistical comparison was that the
+                    ratio of positive
+                    to negative words exactly correlates with the poet's emotional states in various stages of her life.
+                    <br />
+                    If we
+                    consider the
+                    Ballance Line in the chart below as the point of equilibrium between the poet's negative and
+                    positive
+                    mental states, we
+                    can consider periods where the ratio was below one as the darker periods of her life.
+                    <br />
+                    As it is evident,
+                    the poems she
+                    wrote in her first poetry collection "The Captive" exactly reflect her emotional states during the
+                    years
+                    of youthful
+                    love and romantic marriage.
+                    <br />
+                    In this book, the ratio of positive to negative words is 1.4. In her second
+                    book, published
+                    shortly after her divorce, that is, according to Farzaneh Milani, expressed her romantic feelings
+                    and
+                    heartaches with
+                    her ex-husband, the ratio of positive to negative words exactly reached 1.
+                    <br />
+                    This indicates that during the
+                    writing of
+                    this book, Forough had transformed from a cheerful girl to a balanced woman with a broader view on
+                    both
+                    the good and bad
+                    aspects of life, experiencing both exhilarating moments in her life and marital relationships and
+                    the
+                    challenges,
+                    humiliations, and regrets of a modern woman in a traditional society.
+                    <br />
+                    In her third book, "Rebellion,"
+                    published after
+                    her recovery trip to Europe for nerve and mental rejuvenation, dominantly containing the poems
+                    written
+                    during Forough’s
+                    dark days of life, her divorce, suicide, and long hospitalization, the ratio of positive to negative
+                    words
+                    dropped
+                    significantly below 1, a deficient number indicating her negative emotions and extreme despair.
+                    <br />
+                    During
+                    this period, as
+                    obtained from the word analysis, words like Cry, Hell, and Pain which were not prominent in
+                    Forough's
+                    earlier poems,
+                    were frequently used. Additionally, the word Darkness/Dark was used more than in all other Forough's
+                    works
+                    and is the
+                    most repeated word in this book.
+                  </p>
+                  <!--===== Line Chart =====-->
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                  <script type="text/javascript">
+                    google.charts.load('current', { 'packages': ['corechart'] });
+                    google.charts.setOnLoadCallback(drawChart);
+                    function drawChart() {
+                      var data = google.visualization.arrayToDataTable([
+                        ['Book', 'Percentage of Positive Words / Negative Words', 'Balance Line'],
+                        ['Book 1', 1.4, 1],
+                        ['Book 2', 1.0, 1],
+                        ['Book 3', 0.3, 1],
+                        ['Book 4', 1.6, 1],
+                        ['Book 5', 2.9, 1]
+                      ]);
+                      var options = {
+                        title: '',
+                        curveType: 'function',
+                        legend: { position: 'bottom' },
+                        backgroundColor: '#F6F7FD',
+                        fontSize: 16,
+                      };
+                      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+                      chart.draw(data, options);
+                    }
+                  </script>
+                  <div id="curve_chart"
+                    style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+                    class="center">
+                  </div><br />
+                  <br />
+                  <br />
+                  <p>
+                    Furthermore, Forugh felt immense shame and guilt due to separation from her beloved husband, the
+                    distance
+                    from her young
+                    son, and her brief relationship with another man, whom she referred to as the major mistake of her
+                    life.
+                    So, words such
+                    as hell, God, and pain emerged for the first time in her poetry and were repeated significantly in
+                    her
+                    third book
+                    "Rebellion".
+                    <br />
+                    Her fourth book, "Another Birth," published long after her first three collections, significantly
+                    reflects
+                    an
+                    improvement in her mental state and a resurgence of hope within her. This book was written after
+                    Forugh's
+                    inner journey
+                    and numerous travels, as well as the profound effects of her courageous interactions with society.
+                    The
+                    ratio of positive
+                    to negative words in this book is a meaningful 1.2, indicating Forugh's upward movement towards
+                    finding
+                    contentment in
+                    life despite her realism.
+                    <br />
+                    Her final poetry collection, published posthumously, contains poems composed in the last four years
+                    of her
+                    short life.
+                    <br />
+                    These were years of brilliance, marked by her consecutive international successes and her profound
+                    personal and romantic
+                    relationship with Ibrahim Golestan, which played a significant role in shaping Forugh's exceptional
+                    personality. In this
+                    collection, the percentage of positive to negative words astonishingly exceeds 2.5, indicating the
+                    predominance of
+                    positive emotions and mental states in the poet.
+                    <br />
+                    This meaningful corelation between her life and the words she used in her poems is mainly because of
+                    <br />
+                    Forough’s unmasked
+                    authenticity that distinct her from other poets. While many poets may present verses that differ
+                    from
+                    their everyday
+                    lives and even produce beautiful poems, upon scrutinizing the life and conduct of the poet, one may
+                    discern that the
+                    poetry serves as a mere facade, diverging from the essence of the poet. Yet, the fabric of Forough's
+                    poetry embodies her
+                    genuine beliefs and convictions!
+                    <br />
+                    Forough Farrokhzad's poetry narrates the tale of her life and her
+                    beliefs, a
+                    captivating narrative filled with turbulence, defiance, and undoubtedly, love.
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
     </section>
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <a class="a-footer" href="https://maedeam.github.io/ForoughPedia/" target="_blank"
-            rel="noopener"><strong>ForoughPedia</strong></a>
+          &copy; Copyright <strong>ForoughPedia</strong>
           <br />
           All primary material on the site is used for educational purposes only.
         </div>
         <div class="credits">
-          Designed by <a class="a-footer" href="mailto:maede.hajjari@studio.unibo.it" target="_blank"><strong>Maede
-              Hajjari</strong></a>
+          Designed by <strong>Maede
+            Hajjari</strong>
         </div>
       </div>
     </footer>
