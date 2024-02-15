@@ -197,8 +197,8 @@
       </div>
       <div id="heat-map" class="container padding-top-50" data-aos="fade-up" id="er-model">
         <div class="section-header section-header-negetive">
-          &nbsp;
-          &nbsp;
+          <div class=" bo">
+          </div>
           <h2>Heat Map</h2>
           <br />
           <p>In the second analysis, the question
@@ -260,7 +260,8 @@
                 ]);
                 var options = {
                   colorAxis: { colors: ['#14d9ab', '#08503f'] },
-                  backgroundColor: '#F6F7FD'
+                  backgroundColor: '#F6F7FD',
+                  datalessRegionColor: '#cecece',
                 };
                 var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
                 chart.draw(data, options);
@@ -281,7 +282,6 @@
           <br />
         </div>
       </div>
-
     </section>
     <!-- ======= Footer ======= -->
     <footer id="footer">
