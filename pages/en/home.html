@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ForoughPedia</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../img/favicon.png" rel="icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS and JS File -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/main.js"></script>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+  <script type="text/javascript" src="../../js/mapdata.js"></script>
+  <script type="text/javascript" src="../../js/worldmap.js"></script>
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+      <div id="logo" class="me-auto">
+        <h1>
+          <a href="../../index.html"><span>ForoughPedia</span></a>
+        </h1>
+      </div>
+      <!-- ======= Navbar ======= -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">Project</a></li>
+          <li><a class="nav-link scrollto" href="guide.html">User Guide</a></li>
+          <li class="dropdown"><a href="stages.html"><span>Biography</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stages.html">Stages</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="timeline.html">Timeline</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" class="active"><a href="analysis-map.html"><span>Analysis</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="analysis-map.html#geo-freq">Geo Frequency</a></li>
+              <li><a href="analysis-map.html#heat-map">Heat Map</a></li>
+              <li><a href="analysis-words.html#wo-cloud">Word Clouds</a></li>
+              <li><a href="analysis-words.html#conclusion">Conclusion</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="bibliography.html"><span>Bibliography</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="bibliography.html#primaryBib">Primary Bibliography</a></li>
+              <li><a href="bibliography.html#secondaryBib">Secondary Bibliography</a></li>
+              <li><a href="translations.html">Translations</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="javascript:void(0);"><span>Lang</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('En')">En</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('It')">It</a></li>
+              <li><a href="javascript:void(0);" onclick="changeLanguage('Fa')">Fa</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- ======= Initial ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0">" <span>ForoughPedia</span> "</h1>
+      </br>
+      </br>
+      </br>
+      <h1 class="mb-4 pb-0">A <span>Knowledge WebSite</span> about</br> Forough Farrokhzad</h1>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+      </br>
+    </div>
+  </section>
+  <!-- ======= Project ======= -->
+  <section id="about">
+    <div class="container" data-aos="fade-up">
+      <div class="row project-div">
+        <div class="section-header">
+          <br />
+          <br />
+          <br />
+          <h2>About the Project</h2>
+          <br />
+        </div>
+        <p class="project-text">
+          <br />
+          <br />
+          The Forough Pedia Project, developed as the thesis within DHDK Master's Degree at Alma Mater Studiorum -
+          Università di Bologna, a.y. 2022/2023. This project stands as a knowledge website dedicated to the life and
+          works of Forough Farrokhzad, the greatest contemporary female poet of Iran. Supervised by Professor Paola
+          Italia, with
+          co-supervision by Professor Francesca Tomasi, the project offers a user-friendly trilingual interface,
+          ensuring accessibility
+          for diverse audiences.
+          <br />
+          <br />
+          <br />
+          In this project, besides examining different stages of Forough's life from different perspectives of life,
+          works and mindset, the text analysis and data visualization tools have been used to explore new dimensions of
+          Forough's
+          poetry. Thematic analysis categorizes Forough's writings based on recurring themes and provides the
+          interactive charts
+          for users. The dataset, gathered in CSV format through digital text analysis, supports these analyses and is
+          presented
+          visually. A significant portion of the project focuses on creating an engaging website.
+          <br />
+          <br />
+          <br />
+          Undoubtedly, Foroughpedia has the potential for expansion and enhancement to serve as an inspirational model
+          for
+          showcasing the lives and works of other influential figures worldwide. This endeavor aspires to be a catalyst
+          for
+          further exploration and understanding, fostering an enthusiasm for knowledge-sharing and cultural exchange.
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <a class="a-footer" href="https://maedeam.github.io/ForoughPedia/" target="_blank"
+          rel="noopener"><strong>ForoughPedia</strong></a>
+        <br />
+        All primary material on the site is used for educational purposes only.
+      </div>
+      <div class="credits">
+        Designed by <a class="a-footer" href="mailto:maede.hajjari@studio.unibo.it" target="_blank"><strong>Maede
+            Hajjari</strong></a>
+      </div>
+    </div>
+  </footer>
+  <!-- ======= UP Button ======= -->
+  <button id="scrollToTopBtn">UP</button>
+  <!-- Vendor JS Files -->
+  <script src="../../vendor/aos/aos.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../vendor/php-email-form/validate.js"></script>
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../../js/main.js"></script>
+
+  <script src="../../js/changeLang.js"></script>
+</body>
+
+</html>
