@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Simulate a delay using setTimeout
   setTimeout(function () {
     // Redirect to the 'index.html' page after 3 seconds
-    window.location.href = "pages/En/home.html";
+    window.location.href = "pages/en/home.html";
   }, 2000);
 });
