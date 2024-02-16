@@ -83,7 +83,7 @@ var simplemaps_worldmap_mapdata={
       inactive: "no",
       color: "#009B77",
       description: ". Khulay Dareechay Say",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations"
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html"
     },
     AL: {
       name: "Albania",
@@ -135,7 +135,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Mijn minnaar en andere gedichten"
     },
     BF: {
@@ -283,7 +283,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Forugh Farrochsād: Jene Tage"
     },
     DJ: {
@@ -296,7 +296,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". PERSISK A=V=A=N=T=G=A=R=D=E POESI 1930-2015"
     },
     DO: {
@@ -324,7 +324,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". نصوص نثرية: مقابلات، رسائل، رحلات<br/>\n. مختارات من أشعار فروغ فرخزاد"
     },
     EH: {
@@ -342,7 +342,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Nuevo nacimiento<br/>\n. Forugh Farrokhzad Antologia<br/>\n. Noche en Teherán"
     },
     ET: {
@@ -370,7 +370,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". La Conquête Du Jardin: Poèmes, 1951 1965<br/>\n. Je suis la flamme<br/>\n. Le Mont Damâvand et ses poètes<br/>\n. AU SEUIL D'UNE SAISON FROIDE<br/>\n. Recueil de poèmes<br/>\n. AUTRE NAISSANCE<br/>\n. Une autre naissance<br/>\n. Croyons à l’aube de la saison froide<br/>\n. SAISON FROIDE<br/>\n. La nuit lumineuse<br/>\n. AYONS FROID EN CE DEBUT DE SAISON FROIDE<br/>\n. Poèmes - 1954-1967<br/>\n. Le temps passa et l’horloge frappa quatre coups<br/>"
     },
     GA: {
@@ -383,7 +383,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Poet of Modern Iran: Iconic Woman and Feminine Pioneer of New Persian Poetry<br/>\n. Beyond Black There Is No Colour: The Story of Forough Farrokhzad<br/>\n. Let Us Believe in the Beginning of the Cold Season"
     },
     GE: {
@@ -426,7 +426,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Silences"
     },
     GS: {
@@ -489,7 +489,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Hava Na'amin be Reshit HaOna HaKara<br/>\n. Leda Acheret"
     },
     IN: {
@@ -502,7 +502,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". الأعمال الشعرية الكاملة: فروغ فرخزاد"
     },
     IR: {
@@ -520,7 +520,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". È solo la voce che resta<br/>\n. Io parlo dai confini della notte<br/>\n. La strage dei fiori<br/>\n. Tutto il mio essere è un canto"
     },
     JM: {
@@ -563,7 +563,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". 바람이 우리를 데려다 주리라"
     },
     KW: {
@@ -571,7 +571,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". الأسيرة مختارات من ديوان شعر"
     },
     KZ: {
@@ -714,7 +714,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Iemand Die Op Niemand Lijkt<br/>\n. Mirrors of Entrapment and Emancipation: Forugh Farrokhzad and Sylvia Plath"
     },
     NO: {
@@ -727,7 +727,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Manpareka Kehi Kavita"
     },
     NZ: {
@@ -765,7 +765,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Forugh Farrokhzad Life and poetry"
     },
     PL: {
@@ -773,7 +773,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Pote Iranien"
     },
     PR: {
@@ -806,7 +806,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Nu există culoare dincolo de negru. Scrisori cu autoaprindere<br/>\n. Întîlnire în noapte<br/>"
     },
     RS: {
@@ -814,7 +814,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations"
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html"
     },
     RU: {
       name: "Russia",
@@ -846,7 +846,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Bakom fönstret skälver natten<br/>\n. Mitt hjärta sörjer gården<br/>\n. Fången<br/>\n. Karin - Forough : en själ, två språk<br/>\n. Den persiska litteraturen: Översättningar<br/>"
     },
     SI: {
@@ -939,7 +939,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       inactive: "no",
       color: "#009B77",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations",
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html",
       description: ". Rüzgar Bizi Götürecek - Toplu Şiirler<br/>\n. Furug Ferruhzad-Hakkinda Söylenmemis Sözler<br/>\n. Sadece Ses<br/>\n. Gitmekti Benim Payıma Düşen<br/>\n. Yeryüzü Ayetleri<br/>\n. Kuş Ölümlüdür Sen Uçmayı Hatırla<br/>\n. Bir Başka Doğuş<br/>\n. Önce Ben Öleceğim<br/>\n. Bir başka doğuş<br/>\n. Bütün Şiirleri<br/>\n. Baweriyê Bînin Em Bi Destpêka Demsala Sar<br/>\n. Kederli İpek<br/>\n. Yaralarım Aşktandır<br/>"
     },
     TT: {
@@ -973,7 +973,7 @@ var simplemaps_worldmap_mapdata={
       hide: "no",
       color: "#009B77",
       description: ". A Rebirth<br/>\n. Rebirth: Poems<br/>\n. Remembering the Flight<br/>\n. If I Were God<br/>\n. Complete Poems of Forough Farokhzad<br/>\n. Sin<br/>\n. The Mirror of My Heart<br/>\n. Another Birth and Other Poems<br/>\n. Forugh Farrokhzad: A Quarter-Century Later<br/>\n. A Lonely Woman<br/>\n. Captive\n. Bride of Acacias",
-      url: "https://maedeam.github.io/ForoughPedia/pages/En/bibliography.html#translations"
+      url: "https://maedeam.github.io/ForoughPedia/pages/en/translations.html"
     },
     UY: {
       name: "Uruguay",

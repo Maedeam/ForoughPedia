@@ -7,6 +7,34 @@
 </head>
 
 <body>
+  <!-- ======= Book 1 Pie Chart Function ======= -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("visualization", '1.1', { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawBook1PieChart);
+    function drawBook1PieChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Gender', 'Number'],
+        ['Neutral words', 360],
+        ['Negative words', 159],
+        ['Positive words', 222]
+      ]);
+      var options = {
+        title: 'Orientation Distribution',
+        pieHole: 0.4,
+        slices: {
+          0: { color: "#009b77", offset: 0.1 },
+          1: { color: "#7c93c2" },
+        },
+        backgroundColor: '#F6F7FD'
+      };
+      var chart = new google.visualization.PieChart(document.getElementById('Book1PieChart'));
+      chart.draw(data, options);
+    }
+  </script>
+  <!-- ======= Book 1 Pie Chart Call ======= -->
+  <div id="Book1PieChart" style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;">
+  </div>
   <!-- ======= Book 1 Bar Chart Function ======= -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
@@ -49,7 +77,6 @@
         title: "Orientation Words",
         width: 1300,
         height: 600,
-
         bar: { groupWidth: "75%" },
         legend: { position: "none" },
         backgroundColor: "#F6F7FD",
@@ -57,17 +84,280 @@
           duration: 2000,
           easing: 'linear',
           startup: true
-        },
+        }
       };
       var chart = new google.visualization.ColumnChart(document.getElementById("Book1BarChart"));
       chart.draw(view, options);
     }
   </script>
   <!-- ======= Book 1 Bar Chart Call ======= -->
-  <div id="Book1BarChart" style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;"
-    class="center;">
+  <div id="Book1BarChart" style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;">
   </div>
-  <br />
+  <!-- ======= Book 2 Bar Chart Function ======= -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("visualization", '1.1', { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawBook2BarChart);
+    function drawBook2BarChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Words", "Iteration", { role: "style" }],
+        ["heart", 102, "#009b77"],
+        ["love", 62, "#009b77"],
+        ["night", 59, "#009b77"],
+        ["eye", 53, "#009b77"],
+        ["lip", 49, "#009b77"],
+        ["gaze", 39, "#009b77"],
+        ["kiss", 37, "#009b77"],
+        ["silent", 36, "#009b77"],
+        ["embrace", 29, "#009b77"],
+        ["desire", 27, "#009b77"],
+        ["know", 26, "#009b77"],
+        ["longing", 26, "#009b77"],
+        ["darkness", 23, "#009b77"],
+        ["star", 21, "#009b77"],
+        ["sorrow", 21, "#009b77"],
+        ["hope", 21, "#009b77"],
+        ["moment", 20, "#009b77"],
+        ["body", 20, "#009b77"],
+        ["secret", 20, "#009b77"],
+        ["soul", 19, "#009b77"]
+      ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation",
+        },
+        2]);
+      var options = {
+        title: "Orientation Words",
+        width: 1300,
+        height: 600,
+        bar: { groupWidth: "75%" },
+        legend: { position: "none" },
+        backgroundColor: "#F6F7FD",
+        animation: {
+          duration: 2000,
+          easing: 'linear',
+          startup: true
+        }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("Book2BarChart"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!-- ======= Book 2 Bar Chart Call ======= -->
+  <div id="Book2BarChart" style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;">
+  </div>
+  <!-- ======= Book 3 Bar Chart Function ======= -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("visualization", '1.1', { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawBook3BarChart);
+    function drawBook3BarChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Words", "Iteration", { role: "style" }],
+        ["heart", 102, "#009b77"],
+        ["love", 62, "#009b77"],
+        ["night", 59, "#009b77"],
+        ["eye", 53, "#009b77"],
+        ["lip", 49, "#009b77"],
+        ["gaze", 39, "#009b77"],
+        ["kiss", 37, "#009b77"],
+        ["silent", 36, "#009b77"],
+        ["embrace", 29, "#009b77"],
+        ["desire", 27, "#009b77"],
+        ["know", 26, "#009b77"],
+        ["longing", 26, "#009b77"],
+        ["darkness", 23, "#009b77"],
+        ["star", 21, "#009b77"],
+        ["sorrow", 21, "#009b77"],
+        ["hope", 21, "#009b77"],
+        ["moment", 20, "#009b77"],
+        ["body", 20, "#009b77"],
+        ["secret", 20, "#009b77"],
+        ["soul", 19, "#009b77"]
+      ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation",
+        },
+        2]);
+      var options = {
+        title: "Orientation Words",
+        width: 1300,
+        height: 600,
+        bar: { groupWidth: "75%" },
+        legend: { position: "none" },
+        backgroundColor: "#F6F7FD",
+        animation: {
+          duration: 2000,
+          easing: 'linear',
+          startup: true
+        }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("Book3BarChart"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!-- ======= Book 3 Bar Chart Call ======= -->
+  <div id="Book3BarChart" style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;">
+  </div>
+  <!-- ======= Book 4 Bar Chart Function ======= -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("visualization", '1.1', { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawBook4BarChart);
+    function drawBook4BarChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Words", "Iteration", { role: "style" }],
+        ["heart", 102, "#009b77"],
+        ["love", 62, "#009b77"],
+        ["night", 59, "#009b77"],
+        ["eye", 53, "#009b77"],
+        ["lip", 49, "#009b77"],
+        ["gaze", 39, "#009b77"],
+        ["kiss", 37, "#009b77"],
+        ["silent", 36, "#009b77"],
+        ["embrace", 29, "#009b77"],
+        ["desire", 27, "#009b77"],
+        ["know", 26, "#009b77"],
+        ["longing", 26, "#009b77"],
+        ["darkness", 23, "#009b77"],
+        ["star", 21, "#009b77"],
+        ["sorrow", 21, "#009b77"],
+        ["hope", 21, "#009b77"],
+        ["moment", 20, "#009b77"],
+        ["body", 20, "#009b77"],
+        ["secret", 20, "#009b77"],
+        ["soul", 19, "#009b77"]
+      ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation",
+        },
+        2]);
+      var options = {
+        title: "Orientation Words",
+        width: 1300,
+        height: 600,
+        bar: { groupWidth: "75%" },
+        legend: { position: "none" },
+        backgroundColor: "#F6F7FD",
+        animation: {
+          duration: 2000,
+          easing: 'linear',
+          startup: true
+        }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("Book4BarChart"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!-- ======= Book 4 Bar Chart Call ======= -->
+  <div id="Book4BarChart" style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;">
+  </div>
+  <!-- ======= Book 5 Bar Chart Function ======= -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("visualization", '1.1', { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawBook5BarChart);
+    function drawBook5BarChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Words", "Iteration", { role: "style" }],
+        ["heart", 102, "#009b77"],
+        ["love", 62, "#009b77"],
+        ["night", 59, "#009b77"],
+        ["eye", 53, "#009b77"],
+        ["lip", 49, "#009b77"],
+        ["gaze", 39, "#009b77"],
+        ["kiss", 37, "#009b77"],
+        ["silent", 36, "#009b77"],
+        ["embrace", 29, "#009b77"],
+        ["desire", 27, "#009b77"],
+        ["know", 26, "#009b77"],
+        ["longing", 26, "#009b77"],
+        ["darkness", 23, "#009b77"],
+        ["star", 21, "#009b77"],
+        ["sorrow", 21, "#009b77"],
+        ["hope", 21, "#009b77"],
+        ["moment", 20, "#009b77"],
+        ["body", 20, "#009b77"],
+        ["secret", 20, "#009b77"],
+        ["soul", 19, "#009b77"]
+      ]);
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+        {
+          calc: "stringify",
+          sourceColumn: 1,
+          type: "string",
+          role: "annotation",
+        },
+        2]);
+      var options = {
+        title: "Orientation Words",
+        width: 1300,
+        height: 600,
+        bar: { groupWidth: "75%" },
+        legend: { position: "none" },
+        backgroundColor: "#F6F7FD",
+        animation: {
+          duration: 2000,
+          easing: 'linear',
+          startup: true
+        }
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("Book5BarChart"));
+      chart.draw(view, options);
+    }
+  </script>
+  <!-- ======= Book 5 Bar Chart Call ======= -->
+  <div id="Book5BarChart" style="width: 1300px; height: 600px; display:block; margin-left: auto; margin-right: auto;">
+  </div>
+  <!--===== Line Chart =====-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('visualization', '1.1', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Book', 'Percentage of Positive Words / Negative Words', 'Balance Line'],
+        ['Book 1', 1.4, 1],
+        ['Book 2', 1.0, 1],
+        ['Book 3', 0.3, 1],
+        ['Book 4', 1.6, 1],
+        ['Book 5', 2.9, 1]
+      ]);
+      var options = {
+        title: '',
+        curveType: 'function',
+        legend: { position: 'bottom' },
+        backgroundColor: '#F6F7FD',
+        fontSize: 16,
+        animation: {
+          duration: 2000,
+          easing: 'linear',
+          startup: true
+        },
+      };
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+      chart.draw(data, options);
+    }
+  </script>
+  <div id="curve_chart" style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"
+    class="center">
+  </div>
 </body>
 
 </html>
